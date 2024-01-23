@@ -39,9 +39,7 @@ static boolean checkPrimeNumber(int number) {
 	}
 	return flag;
 }
-```
-<br>
-```java
+
 /* 순열을 구하고(모든 경우의 수) 소수 판별하여 집계 */
 static void permutation(int[] arr, int depth, int n, int r) {
 	if(depth == r) {
