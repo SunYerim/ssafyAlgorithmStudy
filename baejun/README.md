@@ -30,6 +30,9 @@
     [[1로 만들기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ1463)
     <br>
     [[피보나치 수의 확장]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ1788)
+    <br>
+    [[서로 다른 부분 문자열의 개수]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ11478)
+    <br>
   - ### silver4
     [[10773]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ10773.java)
     [[11047]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ11047.java)
@@ -156,6 +159,8 @@
   [[멀리뛰기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/Programmers/%EB%A9%80%EB%A6%AC%EB%9B%B0%EA%B8%B0)
   <br>
   [[피보나치 수]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/Programmers/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%EC%88%98)
+  <br>
+  [[소수 찾기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/Programmers/PGM42839)
   <br>
 
 - ### level 3
