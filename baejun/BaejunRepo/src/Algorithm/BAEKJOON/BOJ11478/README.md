@@ -26,18 +26,12 @@
 ### 💻코드
 
 ```java
-/* 첫번째 값부터 ~ i번째 값까지의 누적합을 배열에 저장 */
-int sum = 0;
-for (int i = 1; i <= N; i++) {
-	sum += Integer.parseInt(st.nextToken());
-	cumulativeSum[i] = sum;
-}
-/* prefix 누적합 : i부터 j까지의 합은 (j까지의 누적합 - (i-1)까지의 누적합) */
-for (int i = 0; i < M; i++) {
-	st = new StringTokenizer(in.readLine());
-	int range1 = Integer.parseInt(st.nextToken());
-	int range2 = Integer.parseInt(st.nextToken());
-	System.out.println(cumulativeSum[range2] - cumulativeSum[range1 - 1]);
+/* 모든 부분문자열 추출 */ 
+for(int j = 1; j <= inputStr.length(); j++) {
+	for(int i = 0; i <= inputStr.length() - j; i++) {
+		String a = inputStr.substring(i, i + j);
+		stringSet.add(a); //hashSet에 추가(중복제거)
+	}	
 }
 ```
 
