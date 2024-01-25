@@ -17,6 +17,8 @@
     <br>
     [[Z]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ1074)
     <br>
+    [[트럭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ13335)
+    <br>
   - ### silver2
     [[16953]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ16953.java)
     [[20364]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ20364.java)
