@@ -3,12 +3,9 @@ package Algorithm.BAEKJOON.BOJ11478;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-import com.sun.jdi.connect.Connector.StringArgument;
 
 public class BOJ11478 {
 	static Set<String> stringSet = new HashSet<String>();
