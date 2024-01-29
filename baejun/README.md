@@ -5,17 +5,22 @@
 - java, javascript
 
 ## 🖥️ baekjoon
-
 - ## 🟧 gold
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
     [[줄서기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ17178)
+    <br>
+    [[괄호 제거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ2800)
+    <br>
+
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
     <br>
     [[Z]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ1074)
+    <br>
+    [[트럭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ13335)
     <br>
   - ### silver2
     [[16953]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ16953.java)
@@ -43,6 +48,8 @@
     [[2217]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2217.java)
     [[2776]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2776.java)
     [[2839]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2839.java)
+    [[덱]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ10866)
+    <br>
   - ### silver5
     [[11866]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ11866.java)
     [[1789]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ1789.java)
