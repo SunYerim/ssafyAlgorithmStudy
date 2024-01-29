@@ -48,6 +48,8 @@
     [[2217]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2217.java)
     [[2776]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2776.java)
     [[2839]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2839.java)
+    [[덱]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ10866)
+    <br>
   - ### silver5
     [[11866]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ11866.java)
     [[1789]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ1789.java)
