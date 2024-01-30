@@ -11,7 +11,7 @@
     <br>
     [[줄서기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ17178)
     <br>
-    [[괄호 제거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ2800)
+    [[괄호 제거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ2800)
     <br>
 
 - ## ⬜ silver
@@ -20,7 +20,9 @@
     <br>
     [[Z]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ1074)
     <br>
-    [[트럭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ13335)
+    [[트럭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ13335)
+    <br>
+    [[IOIOI]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ5525)
     <br>
   - ### silver2
     [[16953]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ16953.java)
@@ -48,7 +50,8 @@
     [[2217]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2217.java)
     [[2776]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2776.java)
     [[2839]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2839.java)
-    [[덱]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ10866)
+    <br>
+    [[덱]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ10866)
     <br>
   - ### silver5
     [[11866]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ11866.java)
