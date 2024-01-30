@@ -1,4 +1,4 @@
-package Algorithm.BAEKJOON.BOJ5525;
+package week1.BOJ5525;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

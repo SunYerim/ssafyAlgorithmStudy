@@ -1,4 +1,4 @@
-package Algorithm.BAEKJOON.BOJ2800;
+package week1.BOJ2800;
 
 import java.io.BufferedReader;
 import java.io.IOException;
