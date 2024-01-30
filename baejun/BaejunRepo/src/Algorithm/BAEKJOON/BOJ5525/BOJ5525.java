@@ -31,30 +31,30 @@ public class BOJ5525 {
 		}
 
 		ArrayList<Character> strList = new ArrayList<>();
-		String str = "";
 		char peek;
 		int answer = 0;
 		int sentenceArrLength = sentenceArr.length - 1;
-		
-		while(sentenceArr.length != 0) {
+		while(sentenceArrLength >= 0) {
 			if(strList.size() == 0) {
 				if((peek = sentenceArr[sentenceArrLength--]) == 'I') {
 					strList.add(peek);
 				}
 			} else {
 				char strLastIndex = strList.get(strList.size() - 1);
-				char stackPeekValue = sentenceArr[sentenceArrLength];
+				char stackPeekValue = sentenceArr[sentenceArrLength--];
 				if(strLastIndex == stackPeekValue) {
 					strList.clear();
-					if((peek = sentenceArr[sentenceArrLength--]) == 'I') {
-						strList.add(peek);
+					if(stackPeekValue == 'I') {
+						strList.add(stackPeekValue);
 					}
+				} else {
+					strList.add(stackPeekValue);
 				}
 			}
-			if(P.containsAll(strList)) {
-				System.out.println(strList);
+			if(P.size() == strList.size()) {
 				answer++;
-				strList.remove(0);
+				strList.remove(strList.size() - 1);
+				strList.remove(strList.size() - 1);
 			}
 		}
 		System.out.println(answer);
