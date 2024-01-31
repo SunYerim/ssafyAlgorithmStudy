@@ -42,6 +42,8 @@
     <br>
     [[구간 합 구하기 4]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/BAEKJOON/BOJ11659)
     <br>
+    [[회전하는 큐]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ1021)
+    <br>
   - ### silver4
     [[10773]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ10773.java)
     [[11047]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ11047.java)
@@ -52,6 +54,8 @@
     [[2839]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver4/BJ2839.java)
     <br>
     [[덱]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ10866)
+    <br>
+    [[괄호]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ9012)
     <br>
   - ### silver5
     [[11866]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ11866.java)
