@@ -5,74 +5,86 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class BOJ_2800_괄호제거 {
 	
 	private static int N; // N개 중
-	private static int R; // R개를 뽑아 줄세우는 경우의 수 구하기 (순열)
-	private static boolean[] isSelected; // 현재 뽑은 수 flag 배열
-	private static int[] numbers; // 현재까지 뽑은 수를 저장하는 배열
-	private static int[] input; // 우리가 뽑을 원소들을 저장하는 배열
-	private static int f_count = 0;
-	private static int b_count = 0;
-
-	private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	private static int[] numbers;
+	static String s;
+	static LinkedList<Character> list = new LinkedList<>();
+	static ArrayList<String> list_f;
+	static int[][] d_idx;
+	static HashSet<String> hash = new HashSet<>();
 
 	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		String s = br.readLine();
+		s = br.readLine();
 		int count = 0;
-		for(int i =0 ;i<s.length();i++) {
+		int tmp = 0;
+		
+		for(int i=0;i<s.length();i++) {
 			if(s.charAt(i) == '(') {
 				count++;
 			}
 		}
-		N = count;
 		
-		for(int i = 1; i<=N;i++) {
-			input[i - 1] = i;
-		}
-
+		d_idx = new int[count][2];
+		numbers = new int[count];
 		
-		for(int i=1;i<=count;i++) {
-			R = i;
-			Permutation(0, s);
+		for(int i =0 ;i<s.length();i++) {
+			if(s.charAt(i) == ')') {
+				tmp--;
+				d_idx[tmp][1] = i;
+			}
+			list.add(s.charAt(i));
+			if(s.charAt(i) == '(') {
+				d_idx[tmp][0] = i;
+				tmp++;
+			}
 		}
+		
+		for(int i=0;i<count;i++) {
+			numbers[i] = d_idx[i][1];
+		}
+		
+		for(int i=0;i<count;i++) {
+			N = i+1;
+			combi(0,0);
+		}
+		
+		list_f = new ArrayList<>(hash);
+		
+		Collections.sort(list_f);
+		
+		for(String li : list_f) {
+			bw.write(li + '\n');
+		}
+		
+		bw.flush();
+		bw.close();
+		
 	}
 
 
-	private static void Permutation(int cnt, String s) {
-		if(cnt == R) {
-			List<Character> list = new ArrayList<>();
-			for(int i =0 ;i<s.length();i++) {
-				if(s.charAt(i) == '(') {
-					f_count++;
-					for(int j = 0; j<N;j++) {
-						if(f_count == numbers[i]) {
-							
-						}
-					}
-				}
+	private static void combi(int cnt, int start) {
+
+		if (cnt == N) {
+			for(int i=0;i<cnt;i++) {
+				String s2=s;
+				s2.replace(s2.charAt(d_idx[i][0]) + "", "");
+				s2.replace(s2.charAt(d_idx[i][1]) + "", "");
+				hash.add(s2);
 			}
+			
 			return;
 		}
-		
-		// 유도부분
-		for(int i = 0; i<N ;i++) { // 가능한 모든 수 시도
-			
-			// 선택 여부 체크 (이미 뽑았는지 확인!)
-			if(isSelected[i]) {
-				continue;
-			}
-			
-			numbers[cnt] = input[i]; // 뽑은 숫자 i를 결과 배열에 저장
-			isSelected[i] = true; // 뽑은 숫자 체크
-			Permutation(cnt + 1, s); // 다음 숫자 뽑으러 가기
-			isSelected[i] = false; // 하나의 경우의 수를 구한 후 돌아 왔을 때, 뽑지 않은 상태로 되돌림
 
-		
+		// 시작점부터 가능한 끝까지 선택하는 시도
+		for (int i = 0; i < N; i++) {
+			combi(cnt + 1, i + 1); // 현재 선택한 수의 다음부터 선택하도록 시작점 주기!
+		}
 	}
 }
