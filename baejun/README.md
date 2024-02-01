@@ -13,7 +13,7 @@
     <br>
     [[괄호 제거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ2800)
     <br>
-    [[괄호 제거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ2023)
+    [[신기한 소수]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ2023)
     <br>
 - ## ⬜ silver
   - ### silver1
