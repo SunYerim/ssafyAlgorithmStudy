@@ -29,10 +29,12 @@ public class BOJ1021 {
 				direction = 1;
 			}
 			while(true) {
+				// 뽑아낼 원소가 첫번째 자리에 오면 뽑아내기
 				if(linkedList.get(0) == pickUpNumber) {
 					linkedList.remove(0);
 					break;
 				}
+				// 방향에 따라 각 끝자리 요소 삭제와 삽입
 				if(direction == 0) {
 					cnt++;
 					int removeEle = linkedList.remove(0);
