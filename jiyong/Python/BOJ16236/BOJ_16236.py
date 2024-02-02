@@ -2,7 +2,7 @@ import sys
 from collections import deque
 
 
-def bfs():
+def bfs(dq):
     global eat, time
     while dq:
         x, y, size, t = dq.popleft()
@@ -10,15 +10,20 @@ def bfs():
             break
         for dx, dy in delta:
             nx, ny = dx + x, dy + y
-            if 0 <= nx < N and 0 <= ny < y and visited[nx][ny] < t and map_[nx][ny] <= size:
-                if map_[nx][ny] < size:
+            if 0 <= nx < N and 0 <= ny < N and visited[nx][ny] < t and map_[nx][ny] <= size:
+                if 0 < map_[nx][ny] < size:
+                    print((nx, ny, t+1), end=" -> ")
                     mob[map_[nx][ny]] -= 1
                     map_[nx][ny] = 0
                     eat += 1
-                    time = max(time, t + 1)
+                    time = t + 1
+                    dq.clear()
                     if eat == size:
                         size += 1
                         eat = 0
+                    visited[nx][ny] = t
+                    dq.append((nx, ny, size, t + 1))
+                    break
                 visited[nx][ny] = t
                 dq.append((nx, ny, size, t + 1))
 
@@ -34,12 +39,15 @@ for r, row in enumerate(map_):
         if 0 < n < 7:
             mob[n] += 1
         if n == 9:
-            pos = (r, c, 2, 1)
+            map_[r][c] = 0
+            pos = (r, c, 2, 0)
 
 dq = deque([pos])
 delta = ((-1, 0), (0, -1), (0, 1), (1, 0))
-visited = [[0] * N for _ in range(N)]
-bfs()
+visited = [[-1] * N for _ in range(N)]
+bfs(dq)
+print()
 print(time)
+# print(map_)
 
 # print(*map_, mob, pos, sep='\n')
