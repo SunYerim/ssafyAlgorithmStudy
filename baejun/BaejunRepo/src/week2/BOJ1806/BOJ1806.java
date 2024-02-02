@@ -16,65 +16,38 @@ public class BOJ1806 {
 		StringTokenizer st = new StringTokenizer(in.readLine());
 		int N = Integer.parseInt(st.nextToken());
 		int S = Integer.parseInt(st.nextToken());
-		int minLength;
-		boolean flag = true;
 
-		int[] input = new int[N];
+		/* 입력값 받기 */
+		int[] input = new int[N+1];
 		st = new StringTokenizer(in.readLine());
-		for(int i = 0; i < input.length; i++) {
+		for(int i = 1; i < input.length; i++) {
 			input[i] = Integer.parseInt(st.nextToken());
 		}
-		int[] accArray = new int[N];
-		accArray[0] = input[0];
-		for(int i = 1; i < N; i++) {
+		/* 누적합 배열 생성 */
+		int[] accArray = new int[N+1];
+		accArray[1] = input[1];
+		for(int i = 2; i <= N; i++) {
 			accArray[i] = accArray[i-1] + input[i];
 		}
-		/* 투포인터 */
+		
+		/* 투포인터로 돌리기 */
 		int leftPointer = 0;
-		int rightPointer = accArray.length - 1;
+		int rightPointer = 1;
+		int minLength = accArray.length - 1;
 		/* 모든수의 합이 S보다 작은 경우 : 그러한 합을 만드는 것이 불가한 상황*/
-		if (accArray[rightPointer] < S) {
+		if (accArray[accArray.length - 1] < S) {
 			System.out.println(0);
 			return;
-		} else {
-			minLength = accArray.length;
 		}
-		while(leftPointer < rightPointer) {
-			if((accArray[rightPointer] - accArray[leftPointer]) >= S) {
-				if((rightPointer - leftPointer) < minLength) {
-					minLength = rightPointer - leftPointer;	
-				}
+		
+		while(rightPointer < accArray.length) {
+			/* 부분합이 S보다 크다면? minLength 길이 비교하고 갱신*/
+			if (accArray[rightPointer] - accArray[leftPointer] >= S) {
+				minLength = (minLength > rightPointer - leftPointer) ? rightPointer - leftPointer : minLength;
+				leftPointer++; // S보다 큰 지점까지 왔으니, leftPointer를 옮기며 어디까지 길이 단축이 되나 확인
+			} else {
+				rightPointer++; // S보다 작아지면, 다시 rightPointer를 옮겨서 S보다 커지는 시점 찾기
 			}
-			leftPointer++;
-		}
-		leftPointer = 0;
-		while(leftPointer < rightPointer) {
-			if((accArray[rightPointer] - accArray[leftPointer]) >= S) {
-				if((rightPointer - leftPointer) < minLength) {
-					minLength = rightPointer - leftPointer;	
-				}
-			}
-			rightPointer--;
-		}
-		rightPointer = accArray.length - 1;
-		while(leftPointer < rightPointer) {
-			if((accArray[rightPointer] - accArray[leftPointer]) >= S) {
-				if((rightPointer - leftPointer) < minLength) {
-					minLength = rightPointer - leftPointer;	
-				}
-			}
-			if((accArray[rightPointer - 1] - accArray[leftPointer]) >= S) {
-				if((rightPointer - leftPointer) < minLength) {
-					minLength = rightPointer - leftPointer;	
-				}
-			}
-			if((accArray[rightPointer] - accArray[leftPointer + 1]) >= S) {
-				if((rightPointer - leftPointer) < minLength) {
-					minLength = rightPointer - leftPointer;	
-				}
-			}
-			rightPointer--;
-			leftPointer++;
 		}
 		System.out.println(minLength);
 	}
