@@ -18,6 +18,8 @@
     <br>
     [[신기한 소수]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ2023)
     <br>
+    [[탑]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ2493)
+    <br>
     [[부분 삼각 수열]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ1548)
     <br>
 - ## ⬜ silver
