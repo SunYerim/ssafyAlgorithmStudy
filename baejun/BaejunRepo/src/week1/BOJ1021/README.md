@@ -68,3 +68,12 @@ for(int i = 0; i < M; i++) {
 
 linked list 한번 써보려고 푼 문제! <br>
 각 자료구조가 활약할 수 있는 상황과 특성을 이해하고 적용하는 것을 연습해보자
+
+# 📜History
+
+### Week 1 - (24.01.25 ~ 24.01.31)
+1. [공통] [2800. 괄호 제거 [G5]](./Python/BOJ2800/README.md)
+2. [선정] [1918. 후위 표기식 [G2]](./Python/BOJ1918/README.md)
+3. [선정] [26086. 어려운 스케줄링 [G3]](./Python/BOJ26086/README.md)
+4. [자율] [17071. 숨바꼭질 5 [P5]](./Python/BOJ17071/README.md)
+5. [자율] [1167. 트리의 지름 [G2]](./Python/BOJ1167/README.md)
