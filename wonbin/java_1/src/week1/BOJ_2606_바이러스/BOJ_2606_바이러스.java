@@ -1,4 +1,4 @@
-package BOJ.BOJ_2606_바이러스;
+package week1.BOJ_2606_바이러스;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

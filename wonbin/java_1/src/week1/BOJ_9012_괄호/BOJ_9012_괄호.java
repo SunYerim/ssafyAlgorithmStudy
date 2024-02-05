@@ -1,4 +1,4 @@
-package BOJ.BOJ_9012_괄호;
+package week1.BOJ_9012_괄호;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
