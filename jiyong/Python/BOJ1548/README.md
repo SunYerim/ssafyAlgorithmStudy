@@ -40,43 +40,32 @@
 ```python
 import sys
 
-expr = [*sys.stdin.readline().rstrip()]
-answer = []
-stack = []
+N = int(sys.stdin.readline().rstrip())
+seq = [*map(int, sys.stdin.readline().rstrip().split())]
+seq.sort()
 
-for e in expr:
-    if e.isalpha():
-        answer.append(e)
-    else:
-        if e == '(':
-            stack.append(e)
-        elif e == ')':
-            while stack and stack[-1] != '(':
-                answer += stack.pop()
-            stack.pop()
-        elif e == '*' or e == '/':
-            while stack and (stack[-1] == '*' or stack[-1] == '/'):
-                answer += stack.pop()
-            stack.append(e)
-        elif e == '+' or e == '-':
-            while stack and stack[-1] != '(':
-                answer += stack.pop()
-            stack.append(e)
+length = 2
 
-answer += reversed(stack)
-
-print(''.join(answer))
+if len(seq) < 3:
+    print(len(seq))
+else:
+    lp, rp = 0, 2
+    while rp < len(seq):
+        if seq[lp + 1] - seq[lp] < seq[rp] < seq[lp + 1] + seq[lp]:
+            length = max(length, rp - lp + 1)
+        else:
+            lp += 1
+        rp += 1
+    print(length)
 ```
 
 ---
 
 > **후기**
 
-괄호가 있는 중위 표현식을 후위 표현식으로 전환하는 문제는 처음해보는 유형이라, 괄호 속 괄호를 어떻게 처리할 지를 많이 고민했었다. 시행착오 끝에 조건을 잘 정리해보니 위의 규칙만 잘 따르면 `올바른 식`에서는 잘 작동한다. (해당 문제의 조건이 항상 올바른 식만 입력되니 더 이상의 예외를 고려할 필요는 없지만, 한 번쯤 정리해두면 좋을 것 같다.)
 
 
-P.S. `str`타입은 immutable한 객체라서 한 글자씩 리스트에 담아 처리하는 것이 효율적이다.
 
-문제 풀이 시간 : 1시간 / 실행시간 : `116ms` / 메모리 : `108080KB` / 코드길이 : `931B`
+문제 풀이 시간 : 30분 / 실행시간 : `108ms` / 메모리 : `108080KB` / 코드길이 : `399B`
 
-알고리즘 분류 : 스택, 문자열
+알고리즘 분류 : 그리디, 정렬, 브루트포스
