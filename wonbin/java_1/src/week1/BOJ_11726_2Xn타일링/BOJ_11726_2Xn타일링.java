@@ -1,4 +1,4 @@
-package BOJ.BOJ_11726_2Xn타일링;
+package week1.BOJ_11726_2Xn타일링;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

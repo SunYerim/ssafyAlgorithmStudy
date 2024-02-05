@@ -1,4 +1,4 @@
-package week2.Programmers_lv2_기능개발;
+package week1.Programmers_lv2_기능개발;
 
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {

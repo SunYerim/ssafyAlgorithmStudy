@@ -1,4 +1,4 @@
-package BOJ.BOJ_2800_괄호제거;
+package week1.BOJ_2800_괄호제거;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
