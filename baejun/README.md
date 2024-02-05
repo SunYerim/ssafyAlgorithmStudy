@@ -32,6 +32,8 @@
     <br>
     [[IOIOI]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ5525)
     <br>
+    [[추월]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ2002)
+    <br>
   - ### silver2
     [[16953]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ16953.java)
     [[20364]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ20364.java)
