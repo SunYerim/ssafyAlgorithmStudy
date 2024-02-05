@@ -56,6 +56,7 @@ for(int i = koiTop.length - 1; i >= 0; i--) {
 
 ### 🙄 후기
 소요시간 : 1시간30분  <br>
+![image](https://github.com/SunYerim/ssafyAlgorithmStudy/assets/78029066/60a7e24c-e358-4ecf-9768-2bb2e3fc182a)
 
 맞혔습니다는 뜨는데 시간이 막 3200ms 이러길래, 혹시 stack이랑 deque의 차이인가 싶어 해보니 그건 아니였다(물론 deque가 더 빠르긴했음) <br>
 근데 3200ms -> 750ms로 줄어든건 sysout이랑 stringbuilder 차이 하나뿐이였다 <br>
