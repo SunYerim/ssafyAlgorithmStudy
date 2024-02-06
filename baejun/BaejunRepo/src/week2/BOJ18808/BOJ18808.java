@@ -25,8 +25,8 @@ public class BOJ18808 {
 				}
 			}
 			// 노트북 배열 순회하며 자리찾기
-			noteBookLabel: for(int noteBookRow = 0; noteBookRow <= noteBook.length - sticker.length; noteBookRow++) {
-				for(int noteBookCol = 0; noteBookCol < noteBook[noteBookRow].length - sticker[0].length; noteBookCol++) {
+			noteBookLabel: for(int noteBookRow = 0; noteBookRow <= noteBook.length; noteBookRow++) {
+				for(int noteBookCol = 0; noteBookCol < noteBook[noteBookRow].length; noteBookCol++) {
 					for(int rotate = 0; rotate < 4; rotate++) {
 						boolean flag = false; // 스티커 부착 가능 여부
 						stickerLabel: for(int i = 0; i < sticker.length; i++) {
@@ -52,7 +52,7 @@ public class BOJ18808 {
 							if (rotate == 3) {
 								break noteBookLabel;
 							}
-							sticker = rotateSticker(sticker, rotate);
+							rotateSticker(sticker);
 						}
 					}
 				}
@@ -69,24 +69,14 @@ public class BOJ18808 {
 		System.out.println(cnt);
 	}
 
-	private static int[][] rotateSticker(int[][] sticker, int rotate) {
-		int[][] rotateSticker = new int[sticker[0].length][sticker.length];
-		if(rotate == 0) {
-			int stickerLength = sticker.length - 1;
-			for(int i = 0; i < rotateSticker.length; i++) {
-				for(int j = 0; j <rotateSticker[0].length; j++) {
-					rotateSticker[i][j] = sticker[stickerLength - j][i];
-				}
+	private static void rotateSticker(int[][] sticker) {
+		int[][] tmp = new int[sticker[0].length][sticker.length];
+		for(int r=0; r<sticker.length; r++) {
+			for(int c=0; c<sticker[0].length; c++) {
+				int newR = sticker.length-(r+1);
+				tmp[c][r] = sticker[newR][c];
 			}
-		} else if (rotate == 1) {
-			for(int i = sticker.length - 1; i >= 0; i--) {
-				for(int j = sticker[i].length - 1; j >= 0; j--) {
-					
-				}
-			}
-		} else if (rotate == 2) {
-			
 		}
-		return sticker;
+		sticker=tmp;
 	}
 }

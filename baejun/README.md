@@ -41,6 +41,8 @@
     <br>
     [[색종이 만들기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2630)
     <br>
+    [[너비 우선 탐색2]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ24445)
+    <br>
   - ### silver3
     [[1966]](https://github.com/sonbaejun/Algorithm/tree/master/baekjoon/silver/silver3/BJ1966)
     <br>
@@ -66,6 +68,8 @@
     [[덱]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ10866)
     <br>
     [[괄호]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ9012)
+    <br>
+    [[치킨치킨치킨]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ16439)
     <br>
   - ### silver5
     [[11866]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ11866.java)
@@ -188,7 +192,9 @@
   <br>
   [[소수 찾기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/Programmers/PGM42839)
   <br>
-
+  [[모음사전]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/PGM84512)
+  <br>
+  
 - ### level 3
   [[단속 카메라]](https://github.com/sonbaejun/Algorithm/tree/master/programmers/level3/%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC)
   <br>
