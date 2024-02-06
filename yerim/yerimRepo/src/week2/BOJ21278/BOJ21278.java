@@ -55,8 +55,6 @@ public class BOJ21278 {
             }
         }
 
-        // 각 치킨집 조합에 대한 최단거리 합 계산 후 이를 기준으로 정렬
-
         // 나중에 정렬하기 위한 배열 생성
         List<Node> chicken = new ArrayList<>();
 
@@ -73,9 +71,6 @@ public class BOJ21278 {
         }
 
         Collections.sort(chicken);
-//        for (int i = 0; i < chicken.size(); i++) {
-//            System.out.println(chicken.get(i).city1 +", "+ chicken.get(i).city2 + ", "+ chicken.get(i).distance);
-//        }
         // 답
         System.out.print(chicken.get(0).city1+" "+chicken.get(0).city2+" "+chicken.get(0).distance);
 
