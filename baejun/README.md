@@ -41,6 +41,8 @@
     <br>
     [[색종이 만들기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2630)
     <br>
+    [[너비 우선 탐색2]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ24445)
+    <br>
   - ### silver3
     [[1966]](https://github.com/sonbaejun/Algorithm/tree/master/baekjoon/silver/silver3/BJ1966)
     <br>
@@ -66,6 +68,8 @@
     [[덱]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ10866)
     <br>
     [[괄호]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ9012)
+    <br>
+    [[치킨치킨치킨]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ16439)
     <br>
   - ### silver5
     [[11866]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver5/BJ11866.java)
