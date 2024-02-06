@@ -1,4 +1,4 @@
-package week1.BOJ5972;
+package Algorithm.BOJ5972;
 
 
 import java.util.*;

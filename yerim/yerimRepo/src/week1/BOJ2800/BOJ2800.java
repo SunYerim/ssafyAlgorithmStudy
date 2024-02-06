@@ -1,4 +1,4 @@
-package week2.BOJ2800;
+package week1.BOJ2800;
 
 // 사전식으로 출력
 // string 배열에 담았다가 sort 시켜서 출력?

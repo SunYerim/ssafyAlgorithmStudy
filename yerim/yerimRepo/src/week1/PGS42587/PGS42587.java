@@ -1,4 +1,4 @@
-package week2.PGS42587;
+package week1.PGS42587;
 
 import java.util.PriorityQueue;
 import java.util.Collections;

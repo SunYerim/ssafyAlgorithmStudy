@@ -1,4 +1,4 @@
-package week3.PGS42577;
+package week2.PGS42577;
 
 import java.util.*;
 public class PGS42577 {

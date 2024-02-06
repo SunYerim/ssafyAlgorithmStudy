@@ -1,4 +1,4 @@
-package week2.BOJ22942;
+package week1.BOJ22942;
 
 import java.io.BufferedReader;
 import java.io.IOException;
