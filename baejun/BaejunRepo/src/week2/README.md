@@ -9,7 +9,7 @@
 6. [자율][실버2] [24445. 너비 우선 탐색2](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ18808)
 7. [실습][골드5] [2493. 탑](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ2493)
 8. [실습][실버1] [11286. 절댓값 힙](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ11286)
-
+9. [실습][D4] [1861. 정사각형 방](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/SWEA1861)
 - 😐번외
 [골드3]백준18808 : 스티커 붙이기, 붙잡고 있다가 실패 <br>
 이건 무조건 브루트포스다 싶어서 죽음의 6중 for문으로 잔뜩 혼내주려 했는데, 내 풀이는 8중 for문까지 가버렸다 ㅋㅋㅋ <br>
