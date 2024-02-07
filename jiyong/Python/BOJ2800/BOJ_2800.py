@@ -1,15 +1,14 @@
 import sys
-import copy
 
 # input data: (2+(2*2)+2)
 
-expr = [*sys.stdin.readline().rstrip()]  # ['(', '2', '+', '(', '2', '*', '2', ')', '+', '2', ')']
+expr = sys.stdin.readline().rstrip()  # '(2+(2*2)+2)'
 br_count = expr.count('(')  # 2
 answer = set()
 
-for comb in range(1, 2 ** br_count):  # comb : 1 ~ 4 -> 0b001 ~ 0b100
+for comb in range(1, 2 ** br_count):  # comb : 1 ~ 4 -> #1 0b01 / #2 0b10 / #3 0b11
     stack = []
-    temp = copy.deepcopy(expr)  # ['(', '2', '+', '(', '2', '*', '2', ')', '+', '2', ')']
+    temp = [*expr]  # ['(', '2', '+', '(', '2', '*', '2', ')', '+', '2', ')']
     for i in range(len(temp)):  # i : 0 ~ 11
         if temp[i] == '(':
             if comb & 1:

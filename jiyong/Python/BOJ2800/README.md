@@ -51,15 +51,14 @@
 
 ```python
 import sys
-import copy
 
-expr = [*sys.stdin.readline().rstrip()]
+expr = sys.stdin.readline().rstrip()
 br_count = expr.count('(')
 answer = set()
 
-for comb in range(1, 2 ** br_count):
+for comb in range(1, 2 ** br_count): 
     stack = []
-    temp = copy.deepcopy(expr)
+    temp = [*expr]
     for i in range(len(temp)):
         if temp[i] == '(':
             if comb & 1:
@@ -69,7 +68,8 @@ for comb in range(1, 2 ** br_count):
                 stack.append('(')
             comb >>= 1
         elif temp[i] == ')':
-            if stack[-1] == '{': temp[i] = ''
+            if stack[-1] == '{':
+                temp[i] = ''
             stack.pop()
     answer.add(''.join(temp))
 
@@ -84,6 +84,6 @@ print(*sorted(answer), sep='\n')
 
 DFS로도 풀 수 있겠지만, 구현이 복잡하여 간단하게 이진 중복 순열을 이용하여 풀었다. 
 
-문제 풀이 시간 : 30분 / 실행시간 : `104ms` / 메모리 : `31588KB` / 코드길이 : `574B`
+문제 풀이 시간 : 30분 / 실행시간 : `56ms` / 메모리 : `31120KB` / 코드길이 : `574B`
 
 알고리즘 분류 : 스택, 브루트포스
