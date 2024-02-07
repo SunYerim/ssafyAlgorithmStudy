@@ -7,7 +7,8 @@
 4. [자율][골드4] [1806. 부분합](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ1806)
 5. [자율][실버1] [2002. 추월](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ2002)
 6. [자율][실버2] [24445. 너비 우선 탐색2](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ18808)
-7. [자율][골드5] [2493. 탑](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ2493)
+7. [실습][골드5] [2493. 탑](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ2493)
+8. [실습][실버1] [11286. 절댓값 힙](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ11286)
 
 - 😐번외
 [골드3]백준18808 : 스티커 붙이기, 붙잡고 있다가 실패 <br>
