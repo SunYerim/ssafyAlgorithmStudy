@@ -22,6 +22,10 @@
     <br>
     [[부분 삼각 수열]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ1548)
     <br>
+    [[토마토]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week3/BOJ7576)
+    <br>
+    [[트리]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week3/BOJ1068)
+    <br>
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
@@ -33,6 +37,8 @@
     [[IOIOI]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week1/BOJ5525)
     <br>
     [[추월]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ2002)
+    <br>
+    [[절댓값 힙]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ11286)
     <br>
   - ### silver2
     [[16953]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ16953.java)
@@ -220,4 +226,8 @@
   [[String]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/SWEA/SWEA1213)
   <br>
   [[8각탐색]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/SWEA/SWEA2008)
+  <br>
+
+- ### D4
+  [[정사각형 방]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/SWEA1861)
   <br>
