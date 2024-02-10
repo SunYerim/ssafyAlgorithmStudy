@@ -31,7 +31,7 @@ public class BOJ5639 {
 
 		while((input = in.readLine()) != null) {
 			newNode = Integer.parseInt(input);
-			insertionTree(0); // 부모찾기
+			findParent(0);
 			list.add(new Tree(newNode));
 		}
 		postorderTraversal(0);
@@ -46,12 +46,12 @@ public class BOJ5639 {
 		return;
 	}
 
-	private static void insertionTree(int treeIdx) {
+	private static void findParent(int treeIdx) {
 		if(newNode < list.get(treeIdx).value) {
 			if(list.get(treeIdx).leftNode == -1) {
 				list.get(treeIdx).leftNode = list.size();
 			} else {
-				insertionTree(list.get(treeIdx).leftNode);
+				findParent(list.get(treeIdx).leftNode);
 			}
 			return;
 		}
@@ -59,7 +59,7 @@ public class BOJ5639 {
 			if(list.get(treeIdx).rightNode == -1) {
 				list.get(treeIdx).rightNode = list.size();
 			} else {
-				insertionTree(list.get(treeIdx).rightNode);
+				findParent(list.get(treeIdx).rightNode);
 			}
 			return;
 		}
