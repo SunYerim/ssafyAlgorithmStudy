@@ -28,6 +28,8 @@
     <br>
     [[이진 검색 트리]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week3/BOJ5639)
     <br>
+    [[나무 위의 빗물]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week3/BOJ17073)
+    <br>
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
