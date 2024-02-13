@@ -24,9 +24,6 @@ public class BOJ1068 {
         delNum = Integer.parseInt(br.readLine());
         deleteNode(delNum);
 
-        int count = 0;
-
-
         System.out.println(countLeaf());
     }
 
