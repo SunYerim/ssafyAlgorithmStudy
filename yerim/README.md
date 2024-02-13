@@ -13,3 +13,11 @@
 - [백준 Gold V 호석이 두 마리 치킨 - 21278 ](./yerimRepo/src/week2/BOJ21278/README.md)
 - [프로그래머스 Level2 모음사전 - 84512](./yerimRepo/src/week2/PGS84512/README.md)
 - [프로그래머스 Level2 전화번호 목록 - 42577](./yerimRepo/src/week2/PGS42577/README.md)
+
+## ✔️ Week3 (02.08 ~ 02.13)
+- [백준 Gold V 트리 - 1068](./yerimRepo/src/week3/BOJ1068)
+- [백준 Silver 1 단절점과 단절선 - 14675](./yerimRepo/src/week3/BOJ14675)
+- [백준 Silver 1 쉬운 최단거리 - 14940](./yerimRepo/src/week3/BOJ14940)
+- [백준 Gold V 멍멍이 쓰다듬기 - 1669](./yerimRepo/src/week3/BOJ1669)
+- [백준 Gold IV 트리의 지름 - 1967](./yerimRepo/src/week3/BOJ1967)
+- [백준 Gold V 숫자고르기 - 2668](./yerimRepo/src/week3/BOJ2668)
