@@ -39,5 +39,4 @@ for idx, nodes in enumerate(dw):
         max_width = nodes[-1] - nodes[0] + 1
         max_depth = idx
 
-# print(*dw, sep='\n')
 print(max_depth, max_width)
