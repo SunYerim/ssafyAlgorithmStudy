@@ -22,6 +22,15 @@
 
 
 
+### Week 3 - (24.02.08 ~ 24.02.14)
+1. [공통] [1068. 트리 [G5]](./Python/BOJ1068/README.md)
+2. [선정] [2263. 트리의 순회 [G1]](./Python/BOJ2263/README.md)
+3. [선정] [2250. 트리의 높이와 너비 [G2]](./Python/BOJ2250/README.md)
+4. [자율] [1060. 좋은 수 [G1]](./Java/src/BOJ1060/README.md)
+5. [자율] [1321. 군인 [P5]](./Python/BOJ1321/README.md)
+
+
+
 
 ### Trying to
 
