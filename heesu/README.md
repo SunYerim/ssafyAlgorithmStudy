@@ -18,3 +18,10 @@
 - [[PGS17680]캐시](./Week2/[PGS17680]캐시/README.md)
 - [[PGS42579]베스트앨범](./Week2/[PGS42579]베스트앨범/README.md)
 - [[PGS72412]순위검색](./Week2/[PGS72412]순위검색/README.md)
+
+## Week3
+- [[BOJ1068]트리](Week3/[BOJ1068]트리/README.md)
+- [[BOJ11725]트리의부모찾기](Week3/[BOJ11725]트리의부모찾기/README.md)
+- [[BOJ14675]단절점과단절선](Week3/[BOJ14675]단절점과단절선/README.md)
+- [[BOJ9934]완전이진트리](Week3/[BOJ9934]완전이진트리/README.md)
+- [[SWEA4012]요리사](Week3/[SWEA4012]요리사/README.md)
