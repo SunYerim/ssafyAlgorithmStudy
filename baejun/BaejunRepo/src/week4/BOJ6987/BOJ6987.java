@@ -13,8 +13,6 @@ public class BOJ6987 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-		// 결과를 한 번에 출력하기 위한 StringBuilder
-		StringBuilder sb = new StringBuilder();
 		StringTokenizer st;
 		/* 조별로 경기진행(총 4조) */
 		testcase : for(int tc = 0; tc < 4; tc++) {
@@ -34,7 +32,7 @@ public class BOJ6987 {
 					continue testcase;
 				}
 			}
-
+			
 			matchDay(0);
 
 			if(flag) {
@@ -45,27 +43,29 @@ public class BOJ6987 {
 		}
 	}
 
+	/* 총 15경기를 차례대로 진행하며 나올 수 있는 모든 경우의 수를 구하며, 주어진 케이스의 승무패와 다르다면 가지치기 */
 	private static void matchDay(int start) {
 		// 가지치기 : 이미 빠그러졌다면(0미만이라면) 컷
 		if(start != 0 && (score[match[start-1][0]][0] < 0 || score[match[start-1][1]][2] < 0 || score[match[start-1][0]][1] < 0 || score[match[start-1][1]][1] < 0 || score[match[start-1][0]][2] < 0 || score[match[start-1][1]][0] < 0)) return;
-		// 기저조건
+		// 기저조건(끝까지 가지치기 안당하고 왔다는건 살아남았다는거)
 		if(start == 15) {
 			flag = true;
 			return;
 		}
 		// 유도조건(각 팀의 승무패를 저장해놨기때문에 승.무.패 결과에 따라 카운트 깍아가면서 재귀호출)
+		/*앞팀 승 - 뒷팀 패*/
 		score[match[start][0]][0]--;
 		score[match[start][1]][2]--;
 		matchDay(start+1);
 		score[match[start][0]][0]++;
 		score[match[start][1]][2]++;
-
+		/*무승부*/
 		score[match[start][0]][1]--;
 		score[match[start][1]][1]--;
 		matchDay(start+1);
 		score[match[start][0]][1]++;
 		score[match[start][1]][1]++;
-
+		/*앞팀 패 - 뒷팀 승*/
 		score[match[start][0]][2]--;
 		score[match[start][1]][0]--;
 		matchDay(start+1);
