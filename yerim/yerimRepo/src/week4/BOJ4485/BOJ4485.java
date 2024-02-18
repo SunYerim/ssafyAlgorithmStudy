@@ -62,17 +62,13 @@ public class BOJ4485 {
         // 비용이 낮은 것을 우선 순위 갖도록 설정한다.
         @Override
         public int compareTo(Node o) {
-            if (this.cost < o.cost) {
-                return -1;
-            }
-            return 1;
+            return this.cost - o.cost;
         }
 
     }
 
     public static void dijkstra(int x, int y) {
         PriorityQueue<Node> pq = new PriorityQueue<>();
-        // 시작 노드로 가기 위한 최단 경로는 0으로 설정 -> 큐에 삽입
         pq.offer(new Node(x, y, map[x][y]));
         dist[x][y] = map[x][y];
 
