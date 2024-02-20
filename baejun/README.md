@@ -6,12 +6,20 @@
 
 ## 🖥️ baekjoon
 - ## 🟧 gold
+  
+  - ### gold3
+    [[줄 세우기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ2252)
+    <br>
+    [[음악프로그램]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ2623)
+    <br>
   - ### gold4
     [[부분합]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ1806)
     <br>
     [[월드컵]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ6987)
     <br>
     [[녹색 옷 입은 애가 젤다지?]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ4485)
+    <br>
+    [[키 순서]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ2458)
     <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
