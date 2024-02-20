@@ -1,5 +1,5 @@
 <h3 align="center"> 
-    📢  [골드4] 백준(키 순서) : https://www.acmicpc.net/problem/2458
+    📢  [골드3] 백준(줄 세우기) : https://www.acmicpc.net/problem/2458
 </h3>
 
 <br>
