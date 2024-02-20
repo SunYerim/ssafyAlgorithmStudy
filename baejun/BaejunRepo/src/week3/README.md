@@ -1,6 +1,6 @@
 # 📜History
 
-### Week 2 - (24.02.07 ~ 24.02.13)
+### Week 3 - (24.02.07 ~ 24.02.13)
 1. [공통][골드5] [1068. 트리](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week3/BOJ1068)
 2. [선정][골드5] [17073. 나무 위의 빗물](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week3/BOJ17073)
 3. [선정][골드5] [5639. 이진검색트리](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week3/BOJ5639)
