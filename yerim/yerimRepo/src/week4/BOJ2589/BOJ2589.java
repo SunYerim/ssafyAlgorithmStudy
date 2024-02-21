@@ -39,6 +39,7 @@ public class BOJ2589 {
             for (int j = 0; j < m; j++) {
                 // 육지이면
                 if (map[i][j] == 'L') {
+                    // 모든 거리에서 탐색되어야하므로 매턴마다 초기화작업
                     isVisited = new boolean[n][m];
                     // 모든 L 지점에 대해 bfs 탐색
                     int val = bfs(i, j);
@@ -51,6 +52,7 @@ public class BOJ2589 {
 
     static int bfs(int x, int y) {
         Queue<Node> queue = new LinkedList<>();
+        // 최장거리
         int val = 0;
         isVisited[x][y] = true;
         queue.add(new Node(x, y, 0));

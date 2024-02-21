@@ -21,3 +21,11 @@
 - [백준 Gold V 멍멍이 쓰다듬기 - 1669](./yerimRepo/src/week3/BOJ1669)
 - [백준 Gold IV 트리의 지름 - 1967](./yerimRepo/src/week3/BOJ1967)
 - [백준 Gold V 숫자고르기 - 2668](./yerimRepo/src/week3/BOJ2668)
+- 
+## ✔️ Week4 (02.14 ~ 02.20)
+- [백준 Gold V 보물섬 - 2589](./yerimRepo/src/week4/BOJ2589)
+- [백준 Silver 1 미로 탐색 - 2178](./yerimRepo/src/week4/BOJ2178)
+- [백준 Silver 1 영역 구하기 - 2583](./yerimRepo/src/week4/BOJ2583)
+- [백준 Gold IV 키순서 - 2458](./yerimRepo/src/week4/BOJ2458)
+- [백준 Gold IV 녹색 옷 입은 애가 젤다지? - 4485](./yerimRepo/src/week4/BOJ4485)
+- [백준 Gold 3 벽 부수고 이동하기 - 2206](./yerimRepo/src/week4/BOJ2206)
