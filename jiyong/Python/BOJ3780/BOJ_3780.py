@@ -6,46 +6,28 @@ tc = int(input())
 
 
 def find(x):
-    while link[x] != x:
-        x = link[x]
-    return x
+    if link[x] == x:
+        return x
+    tmp = find(link[x])
+    distance[x] += distance[link[x]]
+    link[x] = tmp
+    return tmp
 
 
-def r_find(x):
-    while r_link[x] != x:
-        x = r_link[x]
-    return x
-
-
-def same(a, b):
-    return find(a) == find(b)
-
-
-def unite(a, b):
-    r_link[b] = a
-    a, b = find(a), find(b)
-    if a == b:
-        return
+def union(a, b):
+    distance[a] = abs(a - b) % 1000
     link[a] = b
-    distance[a] = abs(b - a) + distance[b]
-    update(a, abs(b - a))
-
-
-def update(x, d):
-    while r_find(x) != x:
-        distance[r_find(x)] += d
-        x = r_find(x)
 
 
 for _ in range(tc):
     N = int(input())
     link = [*range(N + 1)]
-    r_link = [*range(N + 1)]
     distance = [0] * (N + 1)
     while (order := input().rstrip()) != 'O':
         if order[0] == 'E':
             __, I = order.split()
+            find(int(I))
             print(distance[int(I)])
         else:
             __, I, J = order.split()
-            unite(int(I), int(J))
+            union(int(I), int(J))

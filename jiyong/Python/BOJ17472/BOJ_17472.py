@@ -8,7 +8,7 @@ N, M = map(int, input().split())
 map_ = [list(map(int, input().split())) for _ in range(N)]
 delta = ((-1, 0), (1, 0), (0, -1), (0, 1))
 answer = 0
-bridge_num = 1
+land_num = 1
 bridge_q = deque()
 edge_set = set()
 
@@ -22,13 +22,13 @@ def land_bfs(r: int, c: int):
             nc = cur_c + dc
             if 0 <= nr < N and 0 <= nc < M:
                 if map_[nr][nc] == 1:
-                    map_[nr][nc] = bridge_num
+                    map_[nr][nc] = land_num
                     q.append((nr, nc))
                 elif map_[nr][nc] == 0:
                     bridge_q.append((dir_, cur_r, cur_c))
 
 
-def bridge_bfs():
+def bridge_dfs():
     while bridge_q:
         dir_, cur_r, cur_c = bridge_q.popleft()
         dist = 1
@@ -57,10 +57,6 @@ def kruskal():
         a, b = find(a), find(b)
         if a == b:
             return
-        if sz[a] < sz[b]:
-            a, b = b, a
-        sz[a] += sz[b];
-        sz[b] = 0
         link[b] = a
 
     global answer
@@ -77,12 +73,11 @@ def kruskal():
 for r in range(N):
     for c in range(M):
         if map_[r][c] == 1:
-            bridge_num += 1
-            map_[r][c] = bridge_num
+            land_num += 1
+            map_[r][c] = land_num
             land_bfs(r, c)
-bridge_bfs()
-link = [*range(bridge_num - 1)]
-sz = [1] * (bridge_num - 1)
+bridge_dfs()
+link = [*range(land_num - 1)]
 kruskal()
 
 print(answer if answer and all([link[0] == x for x in link[1:]]) else -1)

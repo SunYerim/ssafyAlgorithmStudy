@@ -6,31 +6,13 @@ input = sys.stdin.readline
 N, M = map(int, input().split())
 
 map_ = [[*input().rstrip()] for _ in range(N)]
-visited = [[False] * M for _ in range(N)]
 delta = ((1, 0), (-1, 0), (0, 1), (0, -1))
 max_length = 0
-applicant = []
+candidate = []
 
 
 def is_in(r: int, c: int):
     return 0 <= r < N and 0 <= c < M
-
-
-def dfs(r: int, c: int):
-    stack = [(r, c)]
-    visited[r][c] = True
-    while stack:
-        cur_r, cur_c = stack.pop()
-        flag = True
-        for dr, dc in delta:
-            nr = cur_r + dr
-            nc = cur_c + dc
-            if is_in(nr, nc) and not visited[nr][nc] and map_[nr][nc] == 'L':
-                stack.append((nr, nc))
-                visited[nr][nc] = True
-                flag = False
-        if flag:
-            applicant.append((cur_r, cur_c, 0))
 
 
 def bfs(init):
@@ -54,11 +36,19 @@ def bfs(init):
 
 for i in range(N):
     for j in range(M):
-        if map_[i][j] == 'L' and not visited[i][j]:
-            applicant.append((i, j, 0))
-            dfs(i, j)
+        if map_[i][j] == 'L':
+            cnt = 0
+            for dr, dc in delta:
+                nr = i + dr
+                nc = j + dc
+                if not (is_in(nr, nc)):
+                    cnt += 1
+                elif map_[nr][nc] == 'W':
+                    cnt += 1
+            if cnt > 1:
+                candidate.append((i, j, 0))
 
-for el in applicant:
+for el in candidate:
     bfs(el)
 
 print(max_length)
