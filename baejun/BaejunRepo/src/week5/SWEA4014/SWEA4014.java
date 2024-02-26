@@ -33,8 +33,9 @@ public class SWEA4014 {
 			int[] accArray = new int[N];
 			int cnt = 0;
 
-			// 가로방향 먼저 순회
+			// 가로방향 순회
 			for(int i = 0; i < N; i++) {
+				/* 배열을 행 또는 열 별로 구분하여 처리하고 초기화(누적합도) */
 				for(int j = 0; j < N; j++) {
 					arrayRowCol[j] = array[i][j];
 					if(j == 0) {
@@ -43,140 +44,116 @@ public class SWEA4014 {
 						accArray[j] = (arrayRowCol[j]==arrayRowCol[j-1]) ? accArray[j-1]+1 : 1;
 					}
 				}
+				/* 배열이 모든 같은 값이라면 무조건 가능 */
 				if(accArray[accArray.length-1] == accArray.length) {
 					cnt++;
 					continue;
 				}
-				boolean[] visited = new boolean[N];
-				boolean flag = true;
-				for(int j = 1; j < N; j++) {
-					if(arrayRowCol[j] == arrayRowCol[j-1]+1) {
-						if(accArray[j-1] < X) { 
-							flag = false;
-						}
-						else {
-							for(int q = j-1; q > j-1-X; q--) {
-								if(visited[q] = true) {
-									flag = false;
+				boolean flag = false;
+				/* index별로 돌면서 경사로 설치가 불가능, 또는 활주가 불가능한 상황 만날시 가지치기 하기, 안당하고 끝까지 가면 활주가능으로 판단 */
+				for(int k = 1; k < N; k++) {
+					if(flag) break;
+					if(Math.abs(arrayRowCol[k] - arrayRowCol[k-1]) > 1) { 
+						flag = true; 
+						break;
+					}
+					/* 누적합 배열에 -1을 대입할떄, 이미 활주로가 설치 되어 있는지 확인(visited 역할)해서 그렇다면 경사로 중복 설치는 불가능 하므로 안되는 상황임 */
+					else if(Math.abs(arrayRowCol[k] - arrayRowCol[k-1]) == 1) {
+						if(arrayRowCol[k] > arrayRowCol[k-1]) {
+							if(accArray[k-1] < X) {
+								flag = true; 
+								break;
+							}
+							for(int q = k-1; q > k-1-X; q--) {
+								if(accArray[q] == -1) {
+									flag = true;
 									break;
 								}
-								visited[q] = true;
-								if(accArray[q] == 1) break;
+								accArray[q] = -1;
 							}
-						}
-					} else if(arrayRowCol[j] == arrayRowCol[j-1]-1) {
-						int pointer = j+1;
-						for(int k = pointer; k < N; k++) {
-							if(k == N-1) {
-								if(accArray[k] < X) {
-									flag = false;
+						} else {
+							if(k+X-1 >= N) {
+								flag = true;
+								break;
+							}
+							if(accArray[k+X-1] != X) {
+								flag = true;
+								break;
+							}
+							for(int q = k; q < k+X; q++) {
+								if(accArray[q] == -1) {
+									flag = true;
 									break;
-								} else {
-
 								}
-							} else {
-								for(int q = k; q > k-X; q--) {
-									if(visited[q] = true) {
-										flag = false;
-										break;
-									}
-									visited[q] = true;
-									if(accArray[q] == 1) break;
-								}
-							}
-							if(accArray[k] == 1) {
-								if(accArray[k-1] < X) flag = false;
-								else {
-									for(int q = k-1; q > k-1-X; q--) {
-										if(visited[q] = true) {
-											flag = false;
-											break;
-										}
-										visited[q] = true;
-										if(accArray[q] == 1) break;
-									}
-								}
+								accArray[q] = -1;
 							}
 						}
 					}
-					if(!flag) break;
 				}
-				if(flag) cnt++;
+				if(!flag) cnt++;
 			}
-
-			// 가로방향 먼저 순회
-			// 가로방향 먼저 순회
+			
+			// 세로방향 순회
 			for(int i = 0; i < N; i++) {
+				/* 배열을 행 또는 열 별로 구분하여 처리하고 초기화(누적합도) */
 				for(int j = 0; j < N; j++) {
-					arrayRowCol[j] = array[i][j];
+					arrayRowCol[j] = array[j][i];
 					if(j == 0) {
 						accArray[j] = 1;
 					} else {
 						accArray[j] = (arrayRowCol[j]==arrayRowCol[j-1]) ? accArray[j-1]+1 : 1;
 					}
 				}
+				/* 배열이 모든 같은 값이라면 무조건 가능 */
 				if(accArray[accArray.length-1] == accArray.length) {
 					cnt++;
 					continue;
 				}
-				boolean[] visited = new boolean[N];
-				boolean flag = true;
-				for(int j = 1; j < N; j++) {
-					if(arrayRowCol[j] == arrayRowCol[j-1]+1) {
-						if(accArray[j-1] < X) { 
-							flag = false;
-						}
-						else {
-							for(int q = j-1; q > j-1-X; q--) {
-								if(visited[q] = true) {
-									flag = false;
+				boolean flag = false;
+				/* index별로 돌면서 경사로 설치가 불가능, 또는 활주가 불가능한 상황 만날시 가지치기 하기, 안당하고 끝까지 가면 활주가능으로 판단 */
+				for(int k = 1; k < N; k++) {
+					if(flag) break;
+					if(Math.abs(arrayRowCol[k] - arrayRowCol[k-1]) > 1) { 
+						flag = true; 
+						break;
+					}
+					/* 누적합 배열에 -1을 대입할떄, 이미 활주로가 설치 되어 있는지 확인(visited 역할)해서 그렇다면 경사로 중복 설치는 불가능 하므로 안되는 상황임 */
+					else if(Math.abs(arrayRowCol[k] - arrayRowCol[k-1]) == 1) {
+						if(arrayRowCol[k] > arrayRowCol[k-1]) {
+							if(accArray[k-1] < X) {
+								flag = true; 
+								break;
+							}
+							for(int q = k-1; q > k-1-X; q--) {
+								if(accArray[q] == -1) {
+									flag = true;
 									break;
 								}
-								visited[q] = true;
-								if(accArray[q] == 1) break;
+								accArray[q] = -1;
 							}
-						}
-					} else if(arrayRowCol[j] == arrayRowCol[j-1]-1) {
-						int pointer = j+1;
-						for(int k = pointer; k < N; k++) {
-							if(k == N-1) {
-								if(accArray[k] < X) {
-									flag = false;
+						} else {
+							if(k+X-1 >= N) {
+								flag = true;
+								break;
+							}
+							if(accArray[k+X-1] != X) {
+								flag = true;
+								break;
+							}
+							for(int q = k; q < k+X; q++) {
+								if(accArray[q] == -1) {
+									flag = true;
 									break;
-								} else {
-
 								}
-							} else {
-								for(int q = k; q > k-X; q--) {
-									if(visited[q] = true) {
-										flag = false;
-										break;
-									}
-									visited[q] = true;
-									if(accArray[q] == 1) break;
-								}
-							}
-							if(accArray[k] == 1) {
-								if(accArray[k-1] < X) flag = false;
-								else {
-									for(int q = k-1; q > k-1-X; q--) {
-										if(visited[q] = true) {
-											flag = false;
-											break;
-										}
-										visited[q] = true;
-										if(accArray[q] == 1) break;
-									}
-								}
+								accArray[q] = -1;
 							}
 						}
 					}
-					if(!flag) break;
 				}
-				if(flag) cnt++;
+				if(!flag) cnt++;
 			}
 			sb.append(cnt).append("\n");
-		}
+		}	
 		System.out.println(sb);
 	}
 }
