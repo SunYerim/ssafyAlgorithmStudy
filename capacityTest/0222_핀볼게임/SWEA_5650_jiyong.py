@@ -1,7 +1,5 @@
-import sys
 from collections import defaultdict
 
-input = sys.stdin.readline
 # 하, 좌, 상, 우
 delta = ((1, 0), (0, -1), (-1, 0), (0, 1))
 
@@ -16,6 +14,8 @@ def dfs(r: int, c: int, d: int, n: int):
         # 2. 시작지점으로 돌아오거나,
         if (0 <= nr < n and 0 <= nc < n) and (map_[nr][nc] == -1 or (nr == r and nc == c)):
             break
+        if (0 <= nr < n and 0 <= nc < n) and dp[nr][nc][d] != 0:
+            return dp[nr][nc][d] + cnt
         # 벽에 튕겼을 때
         if not (0 <= nr < n and 0 <= nc < n) or map_[nr][nc] == 5:
             d = (d + 2) % 4
@@ -53,6 +53,7 @@ T = int(input())
 for tc in range(1, T + 1):
     N = int(input().rstrip())
     map_ = [list(map(int, input().rstrip().split())) for _ in range(N)]
+    dp = [[[0, 0, 0, 0] for _ in range(N)] for __ in range(N)]
     max_cnt = 0
 
     # 웜홀 쌍 찾기
@@ -68,5 +69,6 @@ for tc in range(1, T + 1):
             if map_[r][c] == 0:
                 for d in range(4):
                     tmp = dfs(r, c, d, N)
+                    dp[r][c][d] = tmp
                     max_cnt = max(max_cnt, tmp)
     print(f'#{tc} {max_cnt}')
