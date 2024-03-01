@@ -14,9 +14,9 @@ public class SWEA4014 {
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st;
 
-		int T = Integer.parseInt(in.readLine());
-		for (int test_case = 1; test_case <= T; test_case++) {
-			sb.append("#" + test_case + " ");
+//		int T = Integer.parseInt(in.readLine());
+		for (int test_case = 1; test_case <= 1; test_case++) {
+//			sb.append("#" + test_case + " ");
 			st = new StringTokenizer(in.readLine());
 			int N = Integer.parseInt(st.nextToken());
 			int X = Integer.parseInt(st.nextToken());
