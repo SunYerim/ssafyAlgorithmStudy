@@ -56,7 +56,7 @@ public class SWEA2383 {
 			}
 			persons = new int[personCnt][2];
 			int personsIndex = -1;
-			// 사람별로 1번계단, 2번계단으로의 소요시간 계산
+			// 사람별로 1번계단, 2번계단으로의 소요시간 계산하기
 			for(int i = 0; i < N; i++) {
 				for(int j = 0; j < N; j++) {
 					if(map[i][j] == 1) {
