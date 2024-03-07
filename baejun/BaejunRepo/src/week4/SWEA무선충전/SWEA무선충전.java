@@ -31,7 +31,7 @@ public class SWEA무선충전 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-		// 결과를 한 번에 출력하기 위한 StringBuilder
+		// 寃곌낵瑜� �븳 踰덉뿉 異쒕젰�븯湲� �쐞�븳 StringBuilder
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st;
 		int T;
@@ -86,7 +86,7 @@ public class SWEA무선충전 {
 				}
 				list.add(new charger(i, position, performance));
 			}
-			//여기까지가 입력값
+			//�뿬湲곌퉴吏�媛� �엯�젰媛�
 			checkingCharge();
 			for(int i = 0; i < M; i++) {
 				switch(aMove[i]) {
@@ -129,7 +129,7 @@ public class SWEA무선충전 {
 		List<Integer> aList = new ArrayList<>();
 		List<Integer> bList = new ArrayList<>();
 
-		// 범위에 있으면 flag 세워서 처리하기
+		// 踰붿쐞�뿉 �엳�쑝硫� flag �꽭�썙�꽌 泥섎━�븯湲�
 		for(int i = 0; i < list.size(); i++) {
 			for(int j = 0; j < list.get(i).position.size(); j++) {
 				int nx = list.get(i).position.get(j)[0];
