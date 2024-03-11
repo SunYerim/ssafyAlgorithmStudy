@@ -4,131 +4,81 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class SFT6248 {
 	static int N, M, startV, endV;
 	static boolean[] visited1, visited2, visited3, visited4;
-	static ArrayList<ArrayList<Integer>> list;
-	
+	static ArrayList<ArrayList<Integer>> list, list2;
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(in.readLine());
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
-		
+
 		list = new ArrayList<>();
+		list2 = new ArrayList<>();
 		for(int i = 0; i < N; i++) {
 			list.add(new ArrayList<>());
+			list2.add(new ArrayList<>());
 		}
-		
+
 		for(int i = 0; i < M; i++) {
 			st = new StringTokenizer(in.readLine());
 			int num1 = Integer.parseInt(st.nextToken());
 			int num2 = Integer.parseInt(st.nextToken());
 			list.get(num1 - 1).add(num2 - 1);
+			list2.get(num2 - 1).add(num1 - 1);
 		}
-		
+
 		st = new StringTokenizer(in.readLine());
-		
+
 		startV = Integer.parseInt(st.nextToken()) - 1;
 		endV = Integer.parseInt(st.nextToken()) - 1;
-		
+
+		visited1 = new boolean[N];
+		visited2 = new boolean[N];
 		visited3 = new boolean[N];
 		visited4 = new boolean[N];
 		
-		visited1 = new boolean[N];
-		BFS1(startV, endV);
-		visited2 = new boolean[N];
-		BFS2(endV, startV);
+		// ì¶œ,í‡´ê·¼ê¸¸ì€ í•œë²ˆì”©ë§Œ ë°©ë¬¸, visited3, 4ë¥¼ í†µí•´ í•´ë‹¹ ë…¸ë“œì—ì„œ ë„ì°©ì ìœ¼ë¡œ ê°ˆìˆ˜ìžˆëŠ”ì§€ ì²´í¬
+		visited1[endV] = true;
+		DFS1(startV, visited1);
+		visited2[startV] = true;
+		DFS1(endV, visited2);
+		DFS2(startV, visited3);
+		DFS2(endV, visited4);
 		int cnt = 0;
-		
+
 		for(int i = 0; i < N; i++) {
 			if(i == startV || i == endV) continue;
-			if(visited3[i] && visited4[i]) cnt++;
+			if(visited1[i] && visited2[i] && visited3[i] && visited4[i]) cnt++;
 		}
-		System.out.println(Arrays.toString(visited1));
-		System.out.println(Arrays.toString(visited2));
-
-		System.out.println(Arrays.toString(visited3));
-		System.out.println(Arrays.toString(visited4));
 		System.out.println(cnt);
 	}
-	
-	private static void BFS1(int start, int end) {
-		visited1[start] = true;
-		Queue<Integer> queue = new LinkedList<>();
-		
-		queue.offer(start);
-		
-		while(!queue.isEmpty()) {
-			int node = queue.poll();
-			visited3[node] = true;
-			if(node == end) break;
-			for(int i = 0; i < list.get(node).size(); i++) {
-				if(!visited1[list.get(node).get(i)]) {
-					visited1[list.get(node).get(i)] = true;
-					queue.offer(list.get(node).get(i));
-				}
-			}
+
+	private static void DFS1(int node, boolean visited[]) {
+		//ê¸°ì €ì¡°ê±´
+		if(visited[node]) {
+			return;
 		}
-	}
-	
-	private static void BFS2(int start, int end) {
-		visited2[start] = true;
-		Queue<Integer> queue = new LinkedList<>();
-		
-		queue.offer(start);
-		
-		while(!queue.isEmpty()) {
-			int node = queue.poll();
-			visited4[node] = true;
-			if(node == end) break;
-			for(int i = 0; i < list.get(node).size(); i++) {
-				if(!visited2[list.get(node).get(i)]) {
-					visited2[list.get(node).get(i)] = true;
-					queue.offer(list.get(node).get(i));
-				}
-			}
+		visited[node] = true;
+		//ìœ ë„ì¡°ê±´
+		for(int i = 0; i < list.get(node).size(); i++) {
+			DFS1(list.get(node).get(i), visited);
 		}
 	}
 
-	private static void DFS1(int node, int end) {
-		//±âÀúÁ¶°Ç
-		if(node == end) {
-			for(int i = 0; i < visited1.length; i++) {
-				if(visited1[i]) visited3[i] = true;
-			}
+	private static void DFS2(int node, boolean visited[]) {
+		//ê¸°ì €ì¡°ê±´
+		if(visited[node]) {
 			return;
 		}
-		//À¯µµÁ¶°Ç
-		for(int i = 0; i < list.get(node).size(); i++) {
-//			if(!visited1[list.get(node).get(i)]) {
-				visited1[list.get(node).get(i)] = true;
-				DFS1(list.get(node).get(i), end);
-				visited1[list.get(node).get(i)] = false;
-//			}
-		}
-	}
-	
-	private static void DFS2(int node, int end) {
-		//±âÀúÁ¶°Ç
-		if(node == end) {
-			for(int i = 0; i < visited2.length; i++) {
-				if(visited2[i]) visited4[i] = true;
-			}
-			return;
-		}
-		//À¯µµÁ¶°Ç
-		for(int i = 0; i < list.get(node).size(); i++) {
-//			if(!visited2[list.get(node).get(i)]) {
-				visited2[list.get(node).get(i)] = true;
-				DFS2(list.get(node).get(i), end);
-				visited2[list.get(node).get(i)] = false;
-//			}
+		visited[node] = true;
+		//ìœ ë„ì¡°ê±´
+		for(int i = 0; i < list2.get(node).size(); i++) {
+			DFS2(list2.get(node).get(i), visited);
 		}
 	}
 }
