@@ -1,14 +1,31 @@
+from heapq import heappush, heappop
+
+
 def solution(n, s, a, b, fares):
     INF = 2147483647
-    dist_table = [[INF] * (n + 1) for _ in range(n + 1)]
-    for c, d, f in fares:
-        dist_table[c][c] = 0
-        dist_table[d][d] = 0
-        dist_table[c][d] = f
-        dist_table[d][c] = f
+    costs = [[INF] * (n + 1) for _ in range(3)]
+    costs[0][a] = 0
+    costs[1][b] = 0
+    costs[2][s] = 0
+    hq = []
 
-    for k in range(1, n + 1):
-        for r in range(1, n + 1):
-            for c in range(1, n + 1):
-                dist_table[r][c] = min(dist_table[r][k] + dist_table[k][c], dist_table[r][c])
-    return min([dist_table[x][a] + dist_table[x][b] + dist_table[x][s] for x in range(1, n + 1)])
+    graph = [[] for _ in range(n + 1)]
+
+    for c, d, f in fares:
+        graph[c].append((f, d))
+        graph[d].append((f, c))
+
+    for i, t in enumerate([a, b, s]):
+        heappush(hq, (0, t))
+        while hq:
+            cost, now = heappop(hq)
+            if cost > costs[i][now]:
+                continue
+
+            for w, next_ in graph[now]:
+                val = cost + w
+                if costs[i][next_] > val:
+                    costs[i][next_] = val
+                    heappush(hq, (val, next_))
+
+    return min([sum([costs[i][j] for i in range(3)]) for j in range(n+1)])
