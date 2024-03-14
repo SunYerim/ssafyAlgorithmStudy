@@ -4,86 +4,97 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
+import java.util.Collections;
+
+
 public class BOJ16398 {
-    static final int INF = (int)1e9;
-    static int N;
-    static int[][] map;
-    static int[] d = new int[1001];
-    static ArrayList<ArrayList<Node>> list = new ArrayList<ArrayList<Node>>();
+    static int n;
+    static long result;
+    static ArrayList<Edge> graph;
+    static int[] parent;
     public static void main(String[] args) throws IOException {
-        // 플로이드-워셜 접근
+        // 제국 내 모든 행성을 연결한다.
+        // union-find -> 하나로 연결
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        N = Integer.parseInt(br.readLine());
-
-        Arrays.fill(d, INF);
-
-        // 초기화
-        for (int i = 0; i < N; i++) {
-            list.add(new ArrayList<Node>());
+        n = Integer.parseInt(br.readLine());
+        graph = new ArrayList<>();
+        parent = new int[n+1];
+        // 부모 테이블 초기화
+        for (int i = 1; i <= n; i++) {
+            parent[i] = i;
         }
 
-        // 그래프 보충
-        for (int i = 0; i < N; i++) {
+
+        for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            for (int j = 0; j < N; j++) {
+            for (int j = 0; j < n; j++) {
                 int num = Integer.parseInt(st.nextToken());
                 if (num != 0) {
-                    list.get(i).add(new Node(j, num));
-                }
-            }
-
-        }
-
-        dijkstra(0);
-
-        System.out.println(d[N-1]);
-
-    }
-
-    private static void dijkstra(int start) {
-        PriorityQueue<Node> queue = new PriorityQueue<>();
-        queue.offer(new Node(start, 0));
-        d[start] = 0;
-
-        while (!queue.isEmpty()) {
-            Node poll = queue.poll();
-            int now = poll.end;
-            int dist = poll.weight;
-            if (d[now] < dist) continue;
-            for (int i = 0; i < list.get(now).size(); i++) {
-                int cost = d[now] + list.get(now).get(i).getWeight();
-                if (cost < d[list.get(now).get(i).getEnd()]) {
-                    d[list.get(now).get(i).getEnd()] = cost;
-                    queue.offer(new Node(list.get(now).get(i).getEnd(), cost));
+                    graph.add(new Edge(i, j, num));
                 }
             }
         }
 
+        Collections.sort(graph);
+
+        // 간선하나씩 확인하면서 최소
+        for (int i = 0; i < graph.size(); i++) {
+            int cost = graph.get(i).getDistance();
+            int a = graph.get(i).getStart();
+            int b = graph.get(i).getEnd();
+            // 사이클이 발생하지 않는 경우
+            if (find(a) != find(b)) {
+                union(a, b);
+                result += cost;
+            }
+        }
+        System.out.println(result);
     }
 
-    static class Node implements Comparable<Node> {
-        private int end, weight;
+    private static int find(int x) {
+        if (x == parent[x])
+            return x;
+        return (parent[x] = find(parent[x]));
+    }
 
-        public Node(int end, int weight) {
+    private static void union(int a, int b) {
+        a = find(a);
+        b = find(b);
+
+        if (a < b) {
+            parent[b] = a;
+        } else {
+            parent[a] = b;
+        }
+    }
+
+    static class Edge implements Comparable<Edge> {
+
+        private int start, end, distance;
+
+        public Edge(int start, int end, int distance) {
+            this.start = start;
             this.end = end;
-            this.weight = weight;
+            this.distance = distance;
         }
 
         public int getEnd() {
-            return this.end;
+            return end;
         }
 
-        public int getWeight() {
-            return this.weight;
+        public int getStart() {
+            return start;
+        }
+
+        public int getDistance() {
+            return distance;
         }
 
         @Override
-        public int compareTo(Node o) {
-            return this.weight - o.weight;
+        public int compareTo(Edge o) {
+            return this.distance - o.distance;
         }
     }
 }
