@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -5,47 +6,33 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class Test {
-	
-	static int N;
-	static int M;
-	static int[] path;
-	static int[] visited;
-	
-	static StringBuilder sb = new StringBuilder();
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		String s = br.readLine();
-		String[] s2 = s.split(" ");
+		int N = Integer.parseInt(br.readLine());
 		
-		N = Integer.parseInt(s2[0]);
-		M = Integer.parseInt(s2[1]);
-		path = new int[N];
-		visited = new int[N+1];
+		int[][] house = new int[N+1][3];
+		int[][] answer = new int[N+1][3];
 		
-		permutation(0, 1);
-		
-		System.out.println(sb);
-	}
-	
-	static void permutation(int cnt, int start) {
-		
-		if(cnt == M) {
-			for(int i=0;i<cnt;i++) {
-				if(path[i] != 0) {
-					sb.append(path[i]+" ");
-				}
-			}
-			sb.append("\n");
-			return;
+		for(int i=1;i<=N;i++) {
+			String s = br.readLine();
+			String[] s2 = s.split(" ");
+			house[i][0] = Integer.parseInt(s2[0]);
+			house[i][1] = Integer.parseInt(s2[1]);
+			house[i][2] = Integer.parseInt(s2[2]);
 		}
 		
-		for(int i=start;i<=N;i++) {
-			path[cnt] = i;
-			visited[i]++;
-			permutation(cnt+1, i);
-			path[cnt] = 0;
+		for(int i=1;i<=N;i++) {
+			answer[i][0] = Math.min(answer[i-1][1], answer[i-1][2]) + house[i][0];
+			answer[i][1] = Math.min(answer[i-1][0], answer[i-1][2]) + house[i][1];
+			answer[i][2] = Math.min(answer[i-1][0], answer[i-1][1]) + house[i][2];
 		}
+		
+		
+		bw.append(Math.min(Math.min(answer[N][0], answer[N][1]), answer[N][2])+""+"\n");
+		bw.flush();
+		bw.close();
 	}
 }
