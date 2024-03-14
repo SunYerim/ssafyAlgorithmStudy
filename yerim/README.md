@@ -29,3 +29,9 @@
 - [백준 Gold IV 키순서 - 2458](./yerimRepo/src/week4/BOJ2458)
 - [백준 Gold IV 녹색 옷 입은 애가 젤다지? - 4485](./yerimRepo/src/week4/BOJ4485)
 - [백준 Gold 3 벽 부수고 이동하기 - 2206](./yerimRepo/src/week4/BOJ2206)
+
+## ✔️ Week7 (03.08 ~ 03.14)
+- [백준 Gold V 끝나지않는 파티- 11265](./yerimRepo/src/week7/BOJ11265)
+- [백준 Gold 4 행성연결 - 16398](./yerimRepo/src/week7/BOJ16398)
+- [프로그래머스 Level3 합승택시요금](./yerimRepo/src/week7/PGS72413)
+- [소프티어 기출 - 염기서열커버](./yerimRepo/src/week2/PGS84512/README.md)
