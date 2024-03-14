@@ -34,4 +34,4 @@
 - [백준 Gold V 끝나지않는 파티- 11265](./yerimRepo/src/week7/BOJ11265)
 - [백준 Gold 4 행성연결 - 16398](./yerimRepo/src/week7/BOJ16398)
 - [프로그래머스 Level3 합승택시요금](./yerimRepo/src/week7/PGS72413)
-- [소프티어 기출 - 염기서열커버](./yerimRepo/src/week2/PGS84512/README.md)
+- [소프티어 기출 - 염기서열커버](./yerimRepo/src/week7/SFT1)
