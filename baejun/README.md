@@ -54,6 +54,8 @@
     <br>
     [[끝나지 않은 파티]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week7/BOJ11265)
     <br>
+    [[평범한 배낭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week8/BOJ12865)
+    <br>
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
