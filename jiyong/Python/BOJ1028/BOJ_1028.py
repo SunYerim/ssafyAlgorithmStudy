@@ -13,12 +13,25 @@ for r in range(R):
         for i in range(4):
             mine[r + 1][c + 1][i] = int(line[c])
 
-for r in range(R):
-    for c in range(C):
-        mine[r + 1][c + 1][0] += (mine[r][c + 1][0] & mine[r + 1][c][0]) << 1
-        mine[r + 1][C - c][1] += (mine[r][C - c][1] & mine[r + 1][C - c + 1][1]) << 1
-        mine[R - r][c + 1][2] += (mine[R - r + 1][c + 1][2] & mine[R - r][c][2]) << 1
-        mine[R - r][C - c][3] += (mine[R - r + 1][C - c][3] & mine[R - r][C - c + 1][3]) << 1
+for r in range(1, R + 1):
+    for c in range(1, C + 1):
+        temp = (mine[r - 1][c][0] & mine[r][c - 1][0]) << 1
+        mine[r][c][0] += 1 << (int(log2(temp))) if temp > 0 else 0
+
+for r in range(R, 0, -1):
+    for c in range(1, C + 1):
+        temp = (mine[r + 1][c][1] & mine[r][c - 1][1]) << 1
+        mine[r][c][1] += 1 << (int(log2(temp))) if temp > 0 else 0
+
+for r in range(1, R + 1):
+    for c in range(C, 0, -1):
+        temp = (mine[r - 1][c][2] & mine[r][c + 1][2]) << 1
+        mine[r][c][2] += 1 << (int(log2(temp))) if temp > 0 else 0
+
+for r in range(R, 0, -1):
+    for c in range(C, 0, -1):
+        temp = (mine[r + 1][c][3] & mine[r][c + 1][3]) << 1
+        mine[r][c][3] += 1 << (int(log2(temp))) if temp > 0 else 0
 
 answer = 0
 for r in range(1, R + 1):
@@ -27,3 +40,4 @@ for r in range(1, R + 1):
         if temp > 0:
             answer = max(answer, int(log2(temp)) + 1)
 print(answer)
+print(*mine, sep='\n')
