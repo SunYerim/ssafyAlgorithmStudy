@@ -35,3 +35,10 @@
 - [백준 Gold 4 행성연결 - 16398](./yerimRepo/src/week7/BOJ16398)
 - [프로그래머스 Level3 합승택시요금](./yerimRepo/src/week7/PGS72413)
 - [소프티어 기출 - 염기서열커버](./yerimRepo/src/week7/SFT1)
+
+
+## ✔️ Week8 (03.15 ~ 03.21)
+- [백준 Gold V 평범한 배낭 - 12865](./yerimRepo/src/week8/BOJ12865)
+- [백준 Silver 2 가장 긴 증가하는 부분 수열 - 11053](./yerimRepo/src/week8/BOJ11053)
+- [백준 Silver 2 연속합 - 1912](./yerimRepo/src/week8/BOJ1912)
+- [프로그래머스 Level3 N으로 표현](./yerimRepo/src/week8/PGS42895)
