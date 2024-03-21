@@ -29,13 +29,12 @@ public class SFT6247 {
 		
 		for(int i = 0; i < q; i++) {
 			long curMiddleValue = (long)Integer.parseInt(in.readLine());
-			long idx2 = binarySearch(0, n-1, curMiddleValue);
-			long idx = Arrays.binarySearch(fuelEfficiency, curMiddleValue); // 이분탐색
-			if(idx2 < 1) { // 없거나 제일 첫번째 자리에 있을땐 그 수가 중앙값일 경우가 없음
+			long idx = binarySearch(0, n-1, curMiddleValue); // 이분탐색
+			if(idx < 1) { // 없거나 제일 첫번째 자리에 있을땐 그 수가 중앙값일 경우가 없음
 				sb.append(0).append("\n");
 				continue;
 			}
-			long cnt = idx2 * ((n-1) - idx2); // 인덱스 위치로 걔보다 (작은경우C1 * 큰경우C1)
+			long cnt = idx * ((n-1) - idx); // 인덱스 위치로 걔보다 (작은경우C1 * 큰경우C1)
 			sb.append(cnt).append("\n");
 		}
 		System.out.println(sb);
@@ -46,13 +45,13 @@ public class SFT6247 {
 		int mid;
 		
 		if(low <= high) {
-			mid = (low+high) / 2;
+			mid = (low+high) / 2; // 중앙값 설정
 			
-			if(fuelEfficiency[mid] == findValue) {
+			if(fuelEfficiency[mid] == findValue) { // 찾았다!
 				return mid;
-			} else if (fuelEfficiency[mid] > findValue) {
+			} else if (fuelEfficiency[mid] > findValue) { // 찾는 값보다 크면 오른쪽은 다 날리고 재탐색
 				return binarySearch(low, mid-1, findValue);
-			} else {
+			} else { // 찾는 값 보다 작으면 왼쪽은 다 날리고 재탐색
 				return binarySearch(mid+1, high, findValue);
 			}
 		}
