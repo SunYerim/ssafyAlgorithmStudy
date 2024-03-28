@@ -49,3 +49,4 @@
 - [백준 Gold 2 가장 긴 증가하는 부분 수열 3 - 12738](./yerimRepo/src/week9/BOJ12738)
 - [백준 Silver 1 팩토리얼 0의 개수 - 11687](./yerimRepo/src/week9/BOJ11687)
 - [프로그래머스 Level3 입국심사](./yerimRepo/src/week9/PGS43238)
+- [백준 Silver 2 랜선자르기 - 1654](./yerimRepo/src/week9/BOJ1654/BOJ1654.java)
