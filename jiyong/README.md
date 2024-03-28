@@ -52,6 +52,13 @@
 - [선정] [Softeer 6247. 자동차 테스트 [LV.3]](./Python/Softeer6247/)
 - [선정] [Softeer 6246. 순서대로 방문하기 [Lv.3]](./Python/Softeer6246/)
 
+### Week 9 - (24.03.22 ~ 24.03.28)
+- [공통] [43238. 입국심사 [Lv.3]](./Python/PGS43238/)
+- [선정] [1300. K번째 수 [G1]](./Python/BOJ1300/README.md)
+- [선정] [12015. 가장 긴 증가하는 부분 수열 2 [G2]](./Python/BOJ12015/README.md)
+- [선정] [12738. 가장 긴 증가하는 부분 수열 3 [G2]](./Python/BOJ12015/README.md)
+- [선정] [Softeer 6250. 성적 평가 [Lv.3]](./Python/Softeer6250/)
+
 
 
 ### Trying to
