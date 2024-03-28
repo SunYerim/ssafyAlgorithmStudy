@@ -6,12 +6,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 
 public class Softeer_HSAT7회정기코딩인증평가기출_자동차테스트 {
 	static int N;
 	static int Q;
-	static ArrayList<Integer> car;
+	static HashMap<Integer, Integer> car = new HashMap<>();
 	static int middle;
 	static int[] answer;
 	static int[] path;
@@ -25,24 +27,22 @@ public class Softeer_HSAT7회정기코딩인증평가기출_자동차테스트 {
 			
 			N = Integer.parseInt(s2[0]);
 			Q = Integer.parseInt(s2[1]);
-			car = new ArrayList<>();
 			answer = new int[Q];
 			
 			s = br.readLine();
 			s2 = s.split(" ");
 			
 			for(int i=0;i<N;i++) {
-				car.add(Integer.parseInt(s2[i]));
+				car.put(Integer.parseInt(s2[1]), i);
 			}
 
+			ArrayList<Integer> list = new ArrayList<>();
 			Collections.sort(car);
 			
 			for(int i=0;i<Q;i++) {
 				int tmp = Integer.parseInt(br.readLine());
 				
-				int cnt = car.indexOf(tmp);
-				
-				if(binarySearch(0, car.size(), cnt) == 1) {
+				if(binarySearch(0, N, tmp) == 1) {
 					int a1 = cnt;
 					int a2 = car.size() - cnt - 1;
 					if(cnt == 0)
