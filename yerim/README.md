@@ -42,3 +42,10 @@
 - [백준 Silver 2 가장 긴 증가하는 부분 수열 - 11053](./yerimRepo/src/week8/BOJ11053)
 - [백준 Silver 2 연속합 - 1912](./yerimRepo/src/week8/BOJ1912)
 - [프로그래머스 Level3 N으로 표현](./yerimRepo/src/week8/PGS42895)
+
+
+## ✔️ Week9 (03.22 ~ 03.28)
+- [백준 Gold 2 가장 긴 증가하는 부분 수열 2 - 12015](./yerimRepo/src/week9/BOJ12015)
+- [백준 Gold 2 가장 긴 증가하는 부분 수열 3 - 12738](./yerimRepo/src/week9/BOJ12738)
+- [백준 Silver 1 팩토리얼 0의 개수 - 11687](./yerimRepo/src/week9/BOJ11687)
+- [프로그래머스 Level3 입국심사](./yerimRepo/src/week9/PGS43238)
