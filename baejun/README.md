@@ -78,6 +78,9 @@
     [[16953]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ16953.java)
     [[20364]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ20364.java)
     [[4948]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ4948.java)
+    [[나무 자르기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week9/BOJ2805)
+    <br>
+    [[랜선 자르기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week9/BOJ1654)
     <br>
     [[색종이 만들기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2630)
     <br>
