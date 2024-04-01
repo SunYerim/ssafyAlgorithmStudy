@@ -1,63 +1,56 @@
 <h3 align="center"> 
-    📢  [골드3] 백준(파티) : https://www.acmicpc.net/problem/1238
+    📢  [골드5] 백준(직사각형의 개수) : https://www.acmicpc.net/problem/2171
 </h3>
 
 <br>
 
 ## 🚀 문제
 
-N개의 숫자로 구분된 각각의 마을에 한 명의 학생이 살고 있다.
-어느 날 이 N명의 학생이 X (1 ≤ X ≤ N)번 마을에 모여서 파티를 벌이기로 했다. 이 마을 사이에는 총 M개의 단방향 도로들이 있고 i번째 길을 지나는데 Ti(1 ≤ Ti ≤ 100)의 시간을 소비한다.
-각각의 학생들은 파티에 참석하기 위해 걸어가서 다시 그들의 마을로 돌아와야 한다. 하지만 이 학생들은 워낙 게을러서 최단 시간에 오고 가기를 원한다.
-이 도로들은 단방향이기 때문에 아마 그들이 오고 가는 길이 다를지도 모른다. N명의 학생들 중 오고 가는데 가장 많은 시간을 소비하는 학생은 누구일지 구하여라.
+2차원 평면 위에 N(1 ≤ N ≤ 5,000)개의 점들이 있다. 이런 점들 중 서로 다른 네 개의 점을 잡아서 연결하면 사각형이 만들어진다. 이러한 사각형들 중에서, x축과 y축에 평행한 직사각형의 개수를 구하는 프로그램을 작성하시오. 직사각형의 넓이는 양수이어야 한다.
 
 ---
 
 ## 🚦입출력 + 제한사항
 
-- 첫째 줄에 N(1 ≤ N ≤ 1,000), M(1 ≤ M ≤ 10,000), X가 공백으로 구분되어 입력된다. 두 번째 줄부터 M+1번째 줄까지 i번째 도로의 시작점, 끝점, 그리고 이 도로를 지나는데 필요한 소요시간 Ti가 들어온다. 시작점과 끝점이 같은 도로는 없으며, 시작점과 한 도시 A에서 다른 도시 B로 가는 도로의 개수는 최대 1개이다.
-- 모든 학생들은 집에서 X에 갈수 있고, X에서 집으로 돌아올 수 있는 데이터만 입력으로 주어진다.
-- 첫 번째 줄에 N명의 학생들 중 오고 가는데 가장 오래 걸리는 학생의 소요시간을 출력한다.
+- 첫째 줄에 N이 주어진다. 다음 N개의 줄에는 각 점의 x, y좌표가 주어진다. 좌표의 범위는 -1,000,000,000 이상 1,000,000,000 이하이며, 두 점의 좌표가 같은 경우는 없다.
+- 첫째 줄에 직사각형의 개수를 출력한다.
 
 ---
 
 ### 📜 문제 풀이(기능 목록, 접근법)
 **🕸접근법**
-- 파티장으로 가는 최소경로와, 파티장에서 집으로 가는 최소경로 둘다 구해야함
-- 역방향 어쩌구 생각났는데, 파티장 to 집 최소 경로랑, 집별로 집 to 파티장 반복문 돌려도 시간복잡도 충분하길래 그렇게 돌림
+- x축을 기준으로 y축 리스트를 생성
+- 같은 x축의 두개의 y점을 선정하고, 다른 x축에서 선정한 두개의 y점을 보유하고있다면, 직사각형이 성사되므로 그걸 계산함
+- 근데 이 과정을 이분탐색 + 조합으로 풀었는데 시간초과가 났음, 생각해보면 조합을 직접 돌릴 필요가 없고 그냥 개수만 뽑으면되는거였음
+- 그래서 이분탐색으로 같은 x축 기준 y축 리스트로 다른 x축의 같은 y축 개수를 세서 조합 개수를 구했음
 
-- [x] 우선순위큐를 활용한 다잌스트라
+- [x] 이분탐색 + 조합
 
 ### 💻코드
 
 ```java
-private static void dijkstra(int startIdx) {
-	distForGoHome = new int[N+1];
-	PriorityQueue<Node> queue = new PriorityQueue<Node>((o1, o2) -> Integer.compare(o1.cost, o2.cost));
-	Arrays.fill(distForGoHome, Integer.MAX_VALUE);
-	
-	queue.offer(new Node(startIdx, 0));
-	distForGoHome[startIdx] = 0;
-	
-	while(!queue.isEmpty()) {
-		Node curNode = queue.poll();
-		
-		if(distForGoHome[curNode.idx] < curNode.cost) {
-			continue;
-		}
-		
-		for(int i = 0; i < list.get(curNode.idx).size(); i++) {
-			Node ntxNode = list.get(curNode.idx).get(i);
-			
-			if(distForGoHome[ntxNode.idx] > ntxNode.cost + curNode.cost) {
-				distForGoHome[ntxNode.idx] = ntxNode.cost + curNode.cost;
-				queue.offer(new Node(ntxNode.idx, distForGoHome[ntxNode.idx]));
-			}
+private static void binarySearch2(int left, int right, int target, int idx) {
+	int mid = (left+right) / 2;
+	if(mid > nodes.get(idx).list.size()-1) return;
+	if(nodes.get(idx).list.get(mid) == target) {
+		flagForComb = true;
+		return;
+	}
+	if(left <= right) {
+		if(nodes.get(idx).list.get(mid) > target) {
+			right = mid - 1;
+			binarySearch2(left, right, target, idx);
+		} else {
+			left = mid + 1;
+			binarySearch2(left, right, target, idx);
 		}
 	}
+	return;
 }
 ```
 
 ### 🙄 후기
-소요시간 : 40분 <br>
-다익스트라 익힐려고 푼 문제 <br>
+소요시간 : 3시간 <br>
+하하하.. 사실 조합을 직접 돌려서 시간초과가 난걸 깨달은 뒤부터 정답까지는 금방 도달했고 <br>
+이분탐색 코드를 복붙하다가 엣지가 계속 떠서 시간을 욜라리 잡아먹었다. <br>
+코드를 갖다 쓸땐 찬차안히 한바퀴 돌리자 꼭^_^
