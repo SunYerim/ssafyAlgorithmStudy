@@ -24,5 +24,5 @@ for i in range(n):
     if pi[i]:
         if pi[pi[i] - 1]:
             pi[i] = pi[pi[i] - 1]
-        answer += i - pi[i]
+        answer += i - pi[i] + 1
 print(answer)
