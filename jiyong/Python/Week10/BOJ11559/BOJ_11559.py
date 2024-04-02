@@ -8,6 +8,7 @@ delta = ((1, 0), (0, 1), (-1, 0), (0, -1))
 answer = 0
 
 
+# 특정 뿌요가 터트릴 수 있는 위치에 있는지 판별하는 함수
 def boom(r: int, c: int, map_copy: list):
     global delta
     alpha = map_copy[r][c]
@@ -25,6 +26,7 @@ def boom(r: int, c: int, map_copy: list):
     return cnt >= 4
 
 
+# 터트릴 수 있는 뿌요 그룹 찾기
 def find_boom():
     global map_
     flag = False
@@ -38,6 +40,7 @@ def find_boom():
     return flag
 
 
+# 공중에 있는 뿌요를 찾아 떨어뜨리기
 def drop_puyo():
     for c in range(6):
         while True:
@@ -52,6 +55,7 @@ def drop_puyo():
                 break
 
 
+# 특정 열에서 가장 아래에 있는 빈 공간 찾기
 def find_blank(col: int):
     global map_
     row = 11
@@ -60,6 +64,7 @@ def find_blank(col: int):
     return row
 
 
+# 특정 열에서 떨어지지 않은 뿌요 찾기
 def find_puyo(col: int, start: int):
     global map_
     row = start - 1
@@ -69,7 +74,6 @@ def find_puyo(col: int, start: int):
 
 
 # main
-
 while find_boom():
     answer += 1
     drop_puyo()
