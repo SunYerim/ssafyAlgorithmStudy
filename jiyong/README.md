@@ -60,6 +60,15 @@
 - [선정] [Softeer 6250. 성적 평가 [Lv.3]](./Python/Week09/Softeer6250/)
 
 
+### Week 10 - (24.03.29 ~ 24.04.04)
+- [공통] [2251. 물통 [G5]](./Python/Week10/BOJ2251/README.md)
+- [공통] [13549. 숨바꼭질 3 [G5]](./Python/Week10/BOJ13549/README.md)
+- [공통] [11559. Puyo Puyo [G4]](./Python/Week10/BOJ11559/README.md)
+- [공통] [2171. 직사각형의 개수 [G5]](./Python/Week10/BOJ2171/README.md)
+- [선정] [1787. 문자열의 주기 예측 [P2]](./Python/Week10/BOJ1787/README.md)
+
+
+
 
 ### Trying to
 
