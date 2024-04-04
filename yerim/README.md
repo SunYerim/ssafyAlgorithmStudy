@@ -29,3 +29,24 @@
 - [백준 Gold IV 키순서 - 2458](./yerimRepo/src/week4/BOJ2458)
 - [백준 Gold IV 녹색 옷 입은 애가 젤다지? - 4485](./yerimRepo/src/week4/BOJ4485)
 - [백준 Gold 3 벽 부수고 이동하기 - 2206](./yerimRepo/src/week4/BOJ2206)
+
+## ✔️ Week7 (03.08 ~ 03.14)
+- [백준 Gold V 끝나지않는 파티- 11265](./yerimRepo/src/week7/BOJ11265)
+- [백준 Gold 4 행성연결 - 16398](./yerimRepo/src/week7/BOJ16398)
+- [프로그래머스 Level3 합승택시요금](./yerimRepo/src/week7/PGS72413)
+- [소프티어 기출 - 염기서열커버](./yerimRepo/src/week7/SFT1)
+
+
+## ✔️ Week8 (03.15 ~ 03.21)
+- [백준 Gold V 평범한 배낭 - 12865](./yerimRepo/src/week8/BOJ12865)
+- [백준 Silver 2 가장 긴 증가하는 부분 수열 - 11053](./yerimRepo/src/week8/BOJ11053)
+- [백준 Silver 2 연속합 - 1912](./yerimRepo/src/week8/BOJ1912)
+- [프로그래머스 Level3 N으로 표현](./yerimRepo/src/week8/PGS42895)
+
+
+## ✔️ Week9 (03.22 ~ 03.28)
+- [백준 Gold 2 가장 긴 증가하는 부분 수열 2 - 12015](./yerimRepo/src/week9/BOJ12015)
+- [백준 Gold 2 가장 긴 증가하는 부분 수열 3 - 12738](./yerimRepo/src/week9/BOJ12738)
+- [백준 Silver 1 팩토리얼 0의 개수 - 11687](./yerimRepo/src/week9/BOJ11687)
+- [프로그래머스 Level3 입국심사](./yerimRepo/src/week9/PGS43238)
+- [백준 Silver 2 랜선자르기 - 1654](./yerimRepo/src/week9/BOJ1654/BOJ1654.java)

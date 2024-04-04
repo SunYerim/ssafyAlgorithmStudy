@@ -23,6 +23,8 @@
     <br>
     [[게리맨더링]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ17471)
     <br>
+    [[야구]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week6/BOJ17281)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
@@ -50,6 +52,10 @@
     <br>
     [[택배 배송]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ5972)
     <br>
+    [[끝나지 않은 파티]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week7/BOJ11265)
+    <br>
+    [[평범한 배낭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week8/BOJ12865)
+    <br>
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
@@ -66,14 +72,23 @@
     <br>
     [[영역 구하기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ2583)
     <br>
+    [[케빈 베이컨의 6단계 법칙]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week7/BOJ1389)
+    <br>
   - ### silver2
     [[16953]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ16953.java)
     [[20364]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ20364.java)
     [[4948]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/silver/silver2/BJ4948.java)
+    [[나무 자르기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week9/BOJ2805)
+    <br>
+    [[랜선 자르기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week9/BOJ1654)
     <br>
     [[색종이 만들기]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2630)
     <br>
     [[너비 우선 탐색2]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ24445)
+    <br>
+    [[가장 긴 증가하는 부분 수열]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week8/BOJ11053)
+    <br>
+    [[부분합]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week8/BOJ1912)
     <br>
   - ### silver3
     [[1966]](https://github.com/sonbaejun/Algorithm/tree/master/baekjoon/silver/silver3/BJ1966)
@@ -232,7 +247,9 @@
   <br>
   [[정수삼각형]](https://github.com/sonbaejun/Algorithm/tree/master/programmers/level3/%EC%A0%95%EC%88%98%EC%82%BC%EA%B0%81%ED%98%95)
   <br>
-
+  [[합승 택시 요금]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week7/PGM72413)
+  <br>
+  [[입국심사]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week9/PGM43238)
 ## 🍔 SWEA
 
 - ### D2
@@ -256,4 +273,28 @@
 
 - ### D4
   [[정사각형 방]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/SWEA1861)
+  <br>
+
+- ### A형 대비
+  [[디저트카페]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA2105)
+  <br>
+  [[보호필름]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA2112)
+  <br>
+  [[벌꿀채취]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA2115)
+  <br>
+  [[홈 방범 서비스]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA2117)
+  <br>
+  [[숫자 만들기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA4008)
+  <br>
+  [[특이한 자석]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA4013)
+  <br>
+  [[활주로 건설]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA4014)
+  <br>
+  [[벽돌깨기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA5656)
+  <br>
+  [[보물상자 비밀번호]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week5/SWEA5658)
+  <br>
+  [[수영장]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week6/SWEA1952)
+  <br>
+  [[점심 식사 시간]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week6/SWEA2383)
   <br>
