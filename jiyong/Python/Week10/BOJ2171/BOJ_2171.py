@@ -11,11 +11,11 @@ for _ in range(N):
     x, y = map(int, input().split())
     dic[x].add(y)
 
-x_set = list(dic.keys())
+set_list = list(dic.values())
 
-for i in range(len(x_set) - 1):
-    for j in range(i + 1, len(x_set)):
-        cnt = len(dic[x_set[i]] & dic[x_set[j]])
+for i in range(len(set_list)-1):
+    for j in range(i+1, len(set_list)):
+        cnt = len(set_list[i] & set_list[j])
         if cnt >= 2:
             answer += (cnt * (cnt - 1) // 2)
 
