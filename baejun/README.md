@@ -25,6 +25,8 @@
     <br>
     [[야구]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week6/BOJ17281)
     <br>
+    [[뿌요뿌요]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week10/BOJ11559)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
@@ -55,6 +57,8 @@
     [[끝나지 않은 파티]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week7/BOJ11265)
     <br>
     [[평범한 배낭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week8/BOJ12865)
+    <br>
+    [[직사각형의 개수]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week10/BOJ2171)
     <br>
 - ## ⬜ silver
   - ### silver1
