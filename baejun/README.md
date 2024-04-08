@@ -27,6 +27,10 @@
     <br>
     [[뿌요뿌요]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week10/BOJ11559)
     <br>
+    [[특정한 최단 경로]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ1504)
+    <br>
+    [[최단 경로]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ1753)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
