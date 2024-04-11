@@ -27,6 +27,10 @@
     <br>
     [[뿌요뿌요]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week10/BOJ11559)
     <br>
+    [[특정한 최단 경로]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ1504)
+    <br>
+    [[최단 경로]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ1753)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
@@ -59,6 +63,8 @@
     [[평범한 배낭]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week8/BOJ12865)
     <br>
     [[직사각형의 개수]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week10/BOJ2171)
+    <br>
+    [[상어 초등학교]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ21608)
     <br>
 - ## ⬜ silver
   - ### silver1
