@@ -66,6 +66,8 @@
     <br>
     [[상어 초등학교]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ21608)
     <br>
+    [[서강 그라운드]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ14938)
+    <br>
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
