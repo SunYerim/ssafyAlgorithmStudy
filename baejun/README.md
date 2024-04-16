@@ -31,6 +31,8 @@
     <br>
     [[최단 경로]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ1753)
     <br>
+    [[서강 그라운드]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ14938)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
@@ -66,7 +68,7 @@
     <br>
     [[상어 초등학교]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ21608)
     <br>
-    [[서강 그라운드]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ14938)
+    [[최소비용 구하기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ1916)
     <br>
 - ## ⬜ silver
   - ### silver1
