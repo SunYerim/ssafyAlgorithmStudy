@@ -42,21 +42,13 @@ public class BOJ19236 {
 	static Shark shark;
 	static int max;
 	
-//	static int[][] copyMap;
-//	static Fish[] copyFish;
-	
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 
 		fishes = new Fish[17]; // 1 ~ 16
-//		copyFish = new Fish[17];
 		fishes[0] = null;
-//		copyFish[0] = null;
-
-
 		map = new int[4][4];
-//		copyMap = new int[4][4];
 
 		for(int i = 0; i < 4; i++) {
 			st = new StringTokenizer(in.readLine());
@@ -73,32 +65,14 @@ public class BOJ19236 {
 		int eatInit = map[0][0];
 		map[0][0] = -1;
 		arrangeFish();
-//		for(int i = 0; i < 4; i++) {
-//			for(int j = 0; j < 4; j++) {
-//				if(map[i][j] != -1) {
-//					System.out.print(fishes[map[i][j]].direction + " ");
-//				} else {
-//					System.out.print(" ");
-//				}
-//			}
-//			System.out.println();
-//		}
-//		System.out.println();
-//		for(int i = 0; i < 4; i++) {
-//			for(int j = 0; j < 4; j++) {
-//				System.out.print(map[i][j] + " ");
-//			}
-//			System.out.println();
-//		}
 		DFS(eatInit);
 		System.out.println(max);
+		
 	}
 
 	private static void DFS(int eat) {
 //		System.out.println("현재 상어 위치 : " + shark.x + ", " + shark.y + "방향: " + shark.direction + "(먹은물고기: " + eat);
-		
 		if(max < eat) max = eat;
-		
 		boolean flag = false;
 		
 		for(int k = 1; k <= 3; k++) {
@@ -195,5 +169,4 @@ public class BOJ19236 {
 			}
 		}
 	}
-
 }
