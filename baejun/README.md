@@ -6,7 +6,9 @@
 
 ## 🖥️ baekjoon
 - ## 🟧 gold
-  
+  - ### gold2
+    [[청소년 상어]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ19236)
+    <br>
   - ### gold3
     [[줄 세우기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ2252)
     <br>
