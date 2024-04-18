@@ -56,3 +56,13 @@
 - [백준 Gold V 숨바꼭질3 - 13549](./yerimRepo/src/week10/BOJ13549)
 - [백준 Gold IV 뿌요뿌요~ - 11559](./yerimRepo/src/week10/BOJ11559)
 - [프로그래머스 Level3 이중우선순위큐](./yerimRepo/src/week10/PGS42628)
+
+## ✔️ Week11 (04.05 ~ 04.11)
+- 추후 업로드
+
+## ✔️ Week12 (04.12 ~ 04.18)
+- [백준 Gold IV 중복 제거](./yerimRepo/src/week12/BOJ13701)
+- [백준 Gold IV 서강그라운드 - 14938](./yerimRepo/src/week12/BOJ14938)
+- [백준 Gold IV 알파벳 - 1987](./yerimRepo/src/week12/BOJ1987)
+- [백준 Gold 2 청소년 상어 - 19236](./yerimRepo/src/week12/BOJ19236)
+- [백준 Gold 1 구슬탈출 2 - 13460](./yerimRepo/src/week12/BOJ13460)
