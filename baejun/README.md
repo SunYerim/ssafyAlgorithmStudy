@@ -76,6 +76,8 @@
     <br>
     [[최소비용 구하기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ1916)
     <br>
+    [[두 용액]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week13/BOJ2470)
+    <br>
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
