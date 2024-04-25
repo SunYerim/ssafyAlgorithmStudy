@@ -39,6 +39,10 @@
     <br>
     [[중복 제거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ13701)
     <br>
+    [[불!]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week13/BOJ4179)
+    <br>
+    [[공유기 설치]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week13/BOJ2110)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
@@ -75,6 +79,8 @@
     [[상어 초등학교]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week11/BOJ21608)
     <br>
     [[최소비용 구하기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week12/BOJ1916)
+    <br>
+    [[두 용액]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week13/BOJ2470)
     <br>
 - ## ⬜ silver
   - ### silver1
