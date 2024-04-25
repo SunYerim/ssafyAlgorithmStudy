@@ -66,3 +66,10 @@
 - [백준 Gold IV 알파벳 - 1987](./yerimRepo/src/week12/BOJ1987)
 - [백준 Gold 2 청소년 상어 - 19236](./yerimRepo/src/week12/BOJ19236)
 - [백준 Gold 1 구슬탈출 2 - 13460](./yerimRepo/src/week12/BOJ13460)
+- 
+## ✔️ Week13 (04.19 ~ 04.25)
+- [백준 Gold IV 불! - 4179](./yerimRepo/src/week13/BO4179)
+- [백준 Gold 2 물대기 - 1368](./yerimRepo/src/week12/BOJ1368)
+- [백준 Gold 4 공유기설치 - 2110](./yerimRepo/src/week13/BOJ2110)
+- [백준 Gold 3 군사이동 - 11085](./yerimRepo/src/week13/BOJ11085)
+- [프로그래머스 Level2 점프와 순간 이동](./yerimRepo/src/week13/PGS12980)
