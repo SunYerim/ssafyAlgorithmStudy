@@ -84,6 +84,14 @@
 - [선정] [1028. 다이아몬드 광산 [P5]](./Python/Week12/BOJ1028)
 
 
+### Week 13 - (24.04.19 ~ 24.04.25)
+- [공통] [12980. 점프와 순간 이동 [Lv.2]](./Python/Week13/PGS12980/PGS_12980.py )
+- [공통] [4179. 불! [G4]](./Python/Week00/BOJ4179/README.md)
+- [공통] [2110. 공유기 설치 [G4]](./Python/Week13/BOJ2110/BOJ_2110.py)
+- [공통] [11085. 군사 이동 [G4]](./Python/Week13/BOJ11085/BOJ_11085.py)
+- [선정] [1948. 임계 경로 [P5]](./Python/Week13/BOJ1948/BOJ_1948.py)
+
+
 
 
 ### Trying to
