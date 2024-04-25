@@ -11,18 +11,26 @@ import java.util.StringTokenizer;
 
 public class BOJ11085 {
 	
-	static class Node {
-		int idx;
-		int cost;
+	static class Edge implements Comparable<Edge> {
+		int from;
+		int to;
+		int weight;
 		
-		Node(int idx, int cost) {
-			this.idx = idx;
-			this.cost = cost;
+		Edge(int from, int to, int weight) {
+			this.from = from;
+			this.to = to;
+			this.weight = weight;
+		}
+
+		@Override
+		public int compareTo(Edge o) {
+			return Integer.compare(this.weight, o.weight);
 		}
 	}
 	
-	static int p, w, start, end;
-	static ArrayList<ArrayList<Node>> list;
+	static int p, w, start, end; //p: 정점, w: 간선
+	static int[] parents;
+	static Edge[] edges;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -35,48 +43,53 @@ public class BOJ11085 {
 		
 		start = Integer.parseInt(st.nextToken());
 		end = Integer.parseInt(st.nextToken());
-		
-		list = new ArrayList<>();
-		
-		for(int i = 0; i < p; i++) {
-			list.add(new ArrayList<>());
-		}
+
+		parents = new int[p];
+		edges = new Edge[w];
 		
 		for(int i = 0; i < w; i++) {
 			st = new StringTokenizer(in.readLine());
 			
 			int from = Integer.parseInt(st.nextToken());
 			int to = Integer.parseInt(st.nextToken());
-			int cost = Integer.parseInt(st.nextToken());
+			int weight = Integer.parseInt(st.nextToken());
 			
-			list.get(from).add(new Node(to, cost));
-			list.get(to).add(new Node(from, cost));
+			edges[i] = new Edge(from, to, weight);
 		}
 		
-		int[] dist = new int[p];
-		Arrays.fill(dist, Integer.MAX_VALUE);
-		PriorityQueue<Node> queue = new PriorityQueue<>((o1, o2) -> Integer.compare(o1.cost, o2.cost));
+		Arrays.sort(edges);
+		makeSet();
 		
-		dist[start] = 0;
-		queue.add(new Node(start, 0));
-		
-		while(!queue.isEmpty()) {
-			Node curNode = queue.poll();
-			System.out.println(1);
+		int cnt = 0;
+		long weight = 0;
+		for(Edge e : edges) {
+			if(!union(e.from, e.to)) continue;
 			
-			if(dist[curNode.idx] < curNode.cost) continue;
-			
-			for(int i = 0; i < list.get(curNode.idx).size(); i++) {
-				Node ntxNode = list.get(curNode.idx).get(i);
-				
-				if(dist[ntxNode.idx] > ntxNode.cost + curNode.cost) {
-					dist[ntxNode.idx] = ntxNode.cost + curNode.cost;
-					queue.offer(new Node(ntxNode.idx, dist[ntxNode.idx]));
-				}
-			}
+			weight += e.weight;
+			if(++cnt == p-1) break;
 		}
+		System.out.println(weight);
+	}
+
+	private static boolean union(int a, int b) {
+		int rootA = find(a);
+		int rootB = find(b);
 		
-		System.out.println(Arrays.toString(dist));
+		if(rootA == rootB) return false;
 		
+		parents[rootA] = rootB;
+		return true;
+	}
+
+	private static int find(int a) {
+		if(parents[a] == a) return a;
+		
+		return parents[a] = find(parents[a]);
+	}
+
+	private static void makeSet() {
+		for(int i = 0; i < parents.length; i++) {
+			parents[i] = i;
+		}
 	}
 }
