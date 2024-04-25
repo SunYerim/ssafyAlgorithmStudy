@@ -1,109 +1,103 @@
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.Inet4Address;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Test {
 
-	static int V;
-	static int E;
-	static int start;
-	static ArrayList<line>[] graph;
-	static int[] visited;
-	static int[] dist;
+	static int N;
+	static int M;
+	static ArrayList<Integer>[] list;
+	static int[] group;
+	static int[] people;
+	static int know;
+	static int[] knowlist;
+	static int answer;
 	
-	
-	static class line implements Comparable<line>{
-		int v;
-		int w;
-		
-		public line(int v, int w) {
-			this.v = v;
-			this.w = w;
-		}
-
-		@Override
-		public int compareTo(line o) {
-			return this.w - o.w;
-		}
-		
-		
-	}
-
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		String s = br.readLine();
 		String[] s2 = s.split(" ");
 		
-		V = Integer.parseInt(s2[0]);
-		E = Integer.parseInt(s2[1]);
-		start = Integer.parseInt(br.readLine());
-		graph = new ArrayList[V+1];
-		dist = new int[V+1];
-		visited = new int[V+1];
+		N = Integer.parseInt(s2[0]);
+		M = Integer.parseInt(s2[1]);
+		group = new int[M+1];
+		people = new int[N+1];
 		
-		Arrays.fill(dist, 30000000);
+		s = br.readLine();
+		s2 = s.split(" ");
 		
-		for(int i=0;i<=V;i++) {
-			graph[i] = new ArrayList<>();
+		know = Integer.parseInt(s2[0]);
+		list = new ArrayList[M+1];
+		
+		for(int i=0;i<=M;i++) {
+			list[i] = new ArrayList<>();
 		}
 		
-		for(int i=0;i<E;i++) {
+		if(know != 0) {
+			knowlist = new int[know+1];
+			for(int i=1;i<=know;i++) {
+				knowlist[i] = Integer.parseInt(s2[i]);
+			}
+		}
+		
+		for(int i=1;i<=M;i++) {
 			s = br.readLine();
 			s2 = s.split(" ");
+			int c = Integer.parseInt(s2[0]);
 			
-			int a = Integer.parseInt(s2[0]);
-			int b = Integer.parseInt(s2[1]);
-			int c = Integer.parseInt(s2[2]);
-			
-			graph[a].add(new line(b,c));
-			
-		}
-		
-		dist[start] = 0;
-		bfs(start);
-		
-		for(int i=1;i<=V;i++) {
-			if(dist[i] == 30000000) {
-				bw.append("INF");
-				bw.append("\n");
-			}
-			else {
-				bw.append(dist[i]+"");
-				bw.append("\n");
+			for(int j=1;j<=c;j++) {
+				list[i].add(Integer.parseInt(s2[j]));
 			}
 		}
-		bw.flush();
-		bw.close();
-	}
-
-	private static void bfs(int start) {
-		PriorityQueue<line> que = new PriorityQueue();
-		que.offer(new line(start, 0));
 		
-		while(!que.isEmpty()) {
-			line li = que.poll();
+		if(know != 0) {
+			for(int i=1;i<=know;i++) {
+				for(int j=1;j<=M;j++) {
+					for(int k=0;k<list[j].size();k++) {
+						if(list[j].get(k) == knowlist[i]) {
+							for(int t=0;t<list[j].size();t++) {
+								people[list[j].get(t)] = list[j].get(t);
+							}
+							break;
+						}
+					}
+				}
+			}
 			
-			if(visited[li.v] == 1)
-				continue;
-			visited[li.v] = 1;
-			
-			for(line l : graph[li.v]) {
-				if(dist[l.v] > dist[li.v] + l.w) {
-					dist[l.v] = dist[li.v] + l.w;
-					que.offer(new line(l.v, dist[l.v]));
+			for(int i=1;i<=N;i++) {
+				for(int j=1;j<=M;j++) {
+					for(int k=0;k<list[j].size();k++) {
+						if(list[j].get(k) == people[i]) {
+							group[j]++;
+							break;
+						}
+					}
 				}
 			}
 		}
 		
+		for(int i=1;i<=M;i++) {
+			if(group[i] == 0)
+				answer++;
+		}
+		
+		bw.append(answer+"");
+		bw.append("\n");
+		bw.close();
+		
 	}
 
+	
 }
