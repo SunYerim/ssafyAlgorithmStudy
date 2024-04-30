@@ -47,6 +47,8 @@
     <br>
     [[여행가자]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week14/BOJ1976)
     <br>
+    [[좋다]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week14/BOJ1253)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
