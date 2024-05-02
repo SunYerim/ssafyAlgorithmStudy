@@ -1,10 +1,11 @@
+package week14.BOJ_G5_21610_마법사상어와비바라기;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class Test {
+public class BOJ_G5_21610_마법사상어와비바라기 {
 
 	static int N;
 	static int M;
@@ -17,11 +18,11 @@ public class Test {
 	static int[] dx2 = { -1, 1, 1, -1 };
 	static int answer;
 	static int tmp;
-	
-	static class point  {
+
+	static class point {
 		int y;
 		int x;
-		
+
 		public point(int y, int x) {
 			this.y = y;
 			this.x = x;
@@ -31,7 +32,7 @@ public class Test {
 		public String toString() {
 			return "point [y=" + y + ", x=" + x + "]";
 		}
-		
+
 	}
 
 	public static void main(String[] args) throws IOException {
@@ -53,14 +54,14 @@ public class Test {
 				map[i][j] = Integer.parseInt(s2[j - 1]);
 			}
 		}
-		
+
 		cloud.add(new point(N, 1));
 		cloud.add(new point(N, 2));
 		cloud.add(new point(N - 1, 1));
 		cloud.add(new point(N - 1, 2));
-		
+
 		for (int i = 0; i < M; i++) {
-			
+
 			s = br.readLine();
 			s2 = s.split(" ");
 
@@ -69,56 +70,52 @@ public class Test {
 
 			for (int j = 0; j < b; j++) {
 
-				for(int k=0;k<cloud.size();k++) {
-					if(cloud.get(k).y + dy[a] > N) {
+				for (int k = 0; k < cloud.size(); k++) {
+					if (cloud.get(k).y + dy[a] > N) {
 						cloud.get(k).y = 1;
-					}
-					else if(cloud.get(k).y + dy[a] < 1) {
+					} else if (cloud.get(k).y + dy[a] < 1) {
 						cloud.get(k).y = N;
-					}
-					else {
+					} else {
 						cloud.get(k).y += dy[a];
 					}
 				}
-				
-				for(int k=0;k<cloud.size();k++) {
-					if(cloud.get(k).x + dx[a] > N) {
+
+				for (int k = 0; k < cloud.size(); k++) {
+					if (cloud.get(k).x + dx[a] > N) {
 						cloud.get(k).x = 1;
-					}
-					else if(cloud.get(k).x + dx[a] < 1) {
+					} else if (cloud.get(k).x + dx[a] < 1) {
 						cloud.get(k).x = N;
-					}
-					else {
+					} else {
 						cloud.get(k).x += dx[a];
 					}
 				}
 			}
 
-			for(int j=0;j<cloud.size();j++) {
+			for (int j = 0; j < cloud.size(); j++) {
 				map[cloud.get(j).y][cloud.get(j).x]++;
 			}
-			
+
 			for (int k = 0; k < cloud.size(); k++) { // 물복사 버그
 				for (int ab = 0; ab < 4; ab++) {
-					if(cloud.get(k).y + dy2[ab] >= 1 && cloud.get(k).y + dy2[ab] <= N
-							&& cloud.get(k).x + dx2[ab] >= 1 && cloud.get(k).x + dx2[ab] <= N) {
+					if (cloud.get(k).y + dy2[ab] >= 1 && cloud.get(k).y + dy2[ab] <= N && cloud.get(k).x + dx2[ab] >= 1
+							&& cloud.get(k).x + dx2[ab] <= N) {
 						if (map[cloud.get(k).y + dy2[ab]][cloud.get(k).x + dx2[ab]] != 0) {
 							map[cloud.get(k).y][cloud.get(k).x]++;
 						}
 					}
 				}
 			}
-			
+
 			for (int k = 1; k <= N; k++) {
 				for (int p = 1; p <= N; p++) {
 					if (map[k][p] >= 2) {
-						for(int c=0; c<cloud.size(); c++) {
-							if(cloud.get(c).y == k && cloud.get(c).x == p) {
+						for (int c = 0; c < cloud.size(); c++) {
+							if (cloud.get(c).y == k && cloud.get(c).x == p) {
 								tmp = 1;
 								break;
 							}
 						}
-						if(tmp == 1) {
+						if (tmp == 1) {
 							tmp = 0;
 							continue;
 						}
@@ -127,9 +124,9 @@ public class Test {
 					}
 				}
 			}
-			
+
 			cloud.clear();
-			cloud = (ArrayList<Test.point>) cloud2.clone();
+			cloud = (ArrayList<point>) cloud2.clone();
 			cloud2.clear();
 		}
 
@@ -140,7 +137,5 @@ public class Test {
 		}
 
 		System.out.println(answer);
-
 	}
-
 }
