@@ -19,6 +19,7 @@ public class BOJ1043 {
 		st = new StringTokenizer(in.readLine());
 		int idx = Integer.parseInt(st.nextToken());
 		int answer = 0;
+		
 		/* 진실을 아는 사람이 없다면 그냥 싹 다 허풍 */
 		if(idx != 0) {
 			alreadyKnowTruth = new int[idx];
@@ -70,8 +71,6 @@ public class BOJ1043 {
 		int rootA = find(a);
 		int rootB = find(b);
 
-		if(rootA == rootB) return;
-		
 		int rootAContainsTruth = Arrays.binarySearch(alreadyKnowTruth, rootA);
 		int rootBContainsTruth = Arrays.binarySearch(alreadyKnowTruth, rootB);
 
