@@ -277,6 +277,8 @@
   <br>
   [[모음사전]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/PGM84512)
   <br>
+  [[석유시추]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/PGM250136)
+  <br>
   
 - ### level 3
   [[단속 카메라]](https://github.com/sonbaejun/Algorithm/tree/master/programmers/level3/%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC)
