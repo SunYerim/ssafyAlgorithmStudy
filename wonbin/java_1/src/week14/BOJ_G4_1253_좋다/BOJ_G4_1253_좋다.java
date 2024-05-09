@@ -3,9 +3,7 @@ package week14.BOJ_G4_1253_좋다;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class BOJ_G4_1253_좋다 {
 
