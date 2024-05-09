@@ -106,7 +106,7 @@
 - [공통] [1891. 음악프로그램 [G3]](./Java/Week15/BOJ1891/Main_BOJ_1891.java)
 - [공통] [2623. 거짓말 [G4]](./Java/Week15/BOJ2623/Main_BOJ_2623.java)
 - [공통] [2638. 사분면 [G4]](./Java/Week15/BOJ2638/Main_BOJ_2638.java)
-- [선정] [12929. 올바른 괄호의 갯수 [D4]](./Python/PGS12929/PGS_12929.py)
+- [선정] [12929. 올바른 괄호의 갯수 [Lv.4]](./Python/PGS12929/PGS_12929.py)
 
 
 
