@@ -14,6 +14,8 @@
     <br>
     [[음악프로그램]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week4/BOJ2623)
     <br>
+    [[치즈]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/BOJ2638)
+    <br>
   - ### gold4
     [[부분합]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/BOJ1806)
     <br>
@@ -50,6 +52,8 @@
     [[좋다]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week14/BOJ1253)
     <br>
     [[Rebirth]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week14/BOJ30426)
+    <br>
+    [[거짓말]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/BOJ1043)
     <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
@@ -274,6 +278,8 @@
   [[소수 찾기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/Algorithm/Programmers/PGM42839)
   <br>
   [[모음사전]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week2/PGM84512)
+  <br>
+  [[석유시추]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/PGM250136)
   <br>
   
 - ### level 3
