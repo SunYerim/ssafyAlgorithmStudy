@@ -102,14 +102,10 @@
 
 ### Week 15 - (24.05.03 ~ 24.05.09)
 
-- [공통] [1043. 치즈 [G3]](./Java/Week15/BOJ1043/Main_BOJ_1043.java)
-- [공통] [1891. 음악프로그램 [G3]](./Java/Week15/BOJ1891/Main_BOJ_1891.java)
-- [공통] [2623. 거짓말 [G4]](./Java/Week15/BOJ2623/Main_BOJ_2623.java)
-- [공통] [2638. 사분면 [G4]](./Java/Week15/BOJ2638/Main_BOJ_2638.java)
+- [공통] [1043. 거짓말 [G4]](./Java/Week15/BOJ1043/Main_BOJ_1043.java)
+- [공통] [1891. 사분면 [G4]](./Java/Week15/BOJ1891/Main_BOJ_1891.java)
+- [공통] [2623. 음악프로그램 [G3]](./Java/Week15/BOJ2623/Main_BOJ_2623.java)
+- [공통] [2638. 치즈 [G3]](./Java/Week15/BOJ2638/Main_BOJ_2638.java)
 - [선정] [12929. 올바른 괄호의 갯수 [Lv.4]](./Python/PGS12929/PGS_12929.py)
 
 
-
-### Trying to
-
-[27954](./Python/BOJ27954/BOJ_27954.py) 
