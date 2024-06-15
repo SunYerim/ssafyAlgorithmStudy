@@ -55,6 +55,8 @@
     <br>
     [[거짓말]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/BOJ1043)
     <br>
+    [[단어 수학]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week19/BOJ1339)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
