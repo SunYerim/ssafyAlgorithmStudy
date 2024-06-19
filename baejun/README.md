@@ -55,6 +55,10 @@
     <br>
     [[거짓말]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/BOJ1043)
     <br>
+    [[단어 수학]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week19/BOJ1339)
+    <br>
+    [[빙산]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week19/BOJ2573)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
@@ -281,7 +285,9 @@
   <br>
   [[석유시추]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/PGM250136)
   <br>
-  
+  [[이모티콘 할인행사]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week19/PGM150368)
+  <br>
+
 - ### level 3
   [[단속 카메라]](https://github.com/sonbaejun/Algorithm/tree/master/programmers/level3/%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC)
   <br>
