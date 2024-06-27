@@ -98,6 +98,8 @@
     <br>
     [[두 용액]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week13/BOJ2470)
     <br>
+    [[숫자 고르기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week20/BOJ2668)
+    <br>
 - ## ⬜ silver
   - ### silver1
     [[외계인의 기타 연주]](https://github.com/sonbaejun/Algorithm/tree/master/workspace/Algorithm/Java/src/algorithm/BAEKJOON/BOJ2841)
@@ -286,6 +288,10 @@
   [[석유시추]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week15/PGM250136)
   <br>
   [[이모티콘 할인행사]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week19/PGM150368)
+  <br>
+  [[양궁 대회]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week20/PGM92342)
+  <br>
+  [[택배 배달과 수거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week20/PGM150369)
   <br>
 
 - ### level 3
