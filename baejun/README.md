@@ -59,6 +59,8 @@
     <br>
     [[빙산]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week19/BOJ2573)
     <br>
+    [[이모티콘]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week21/BOJ14226)
+    <br>
   - ### gold5
   - [[1015]](https://github.com/sonbaejun/Algorithm/blob/master/baekjoon/gold/gold5/BJ1011.java)
     <br>
@@ -99,6 +101,8 @@
     [[두 용액]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week13/BOJ2470)
     <br>
     [[숫자 고르기]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week20/BOJ2668)
+    <br>
+    [[강의실 배정]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week21/BOJ11000)
     <br>
 - ## ⬜ silver
   - ### silver1
@@ -292,6 +296,8 @@
   [[양궁 대회]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week20/PGM92342)
   <br>
   [[택배 배달과 수거]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week20/PGM150369)
+  <br>
+  [[양궁대회]](https://github.com/SunYerim/ssafyAlgorithmStudy/tree/baejun/baejun/BaejunRepo/src/week21/PGM159993)
   <br>
 
 - ### level 3
